@@ -4,9 +4,9 @@ title: Installation Guide (English)
 categories: Intro
 tags: intro install_guide
 # 목차
-toc: true  
-toc_sticky: true 
-toc_label: "Table of Contents" 
+toc: true
+toc_sticky: true
+toc_label: "Table of Contents"
 ---
 
 # **A Guide for MATLAB Installation**

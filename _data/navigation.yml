@@ -8,10 +8,8 @@ main:
     url: /categories/
   - title: "Tags"
     url: /tags/
-  - title: "KLMS"
-    url: https://klms.kaist.ac.kr/course/view.php?id=126529
-  # - title: "Years"
-    # url: /years/
+  # - title: "Monthly"
+    # url: /month-archive/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
