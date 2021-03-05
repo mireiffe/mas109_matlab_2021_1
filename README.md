@@ -144,7 +144,7 @@ Found a typo in the documentation or interested in [fixing a bug](https://github
 For help with using the theme or general Jekyll support questions, please use the [Jekyll Talk forums](https://talk.jekyllrb.com/).
 
 ### Pull Requests
-
+ 
 When submitting a pull request:
 
 1. Clone the repo.
