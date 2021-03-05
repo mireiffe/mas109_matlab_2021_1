@@ -9,24 +9,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Serif+KR&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
-$sans-serif: 'Nanum Gothic', 'Noto Serif KR';
-$monospace: 'Roboto Mono';
 $type-size-4-5: 1.12em !default; // Ubuntu Mono is a bit small
 
 // https://github.com/mmistakes/minimal-mistakes/issues/1219
 html {
-    font-size: 12px; // change to whatever
+    font-size: 13px; // change to whatever
 
     @include breakpoint($medium) {
-        font-size: 12px; // change to whatever
+        font-size: 15px; // change to whatever
     }
 
     @include breakpoint($large) {
-        font-size: 14px; // change to whatever
+        font-size: 16.5px; // change to whatever
     }
 
     @include breakpoint($x-large) {
-        font-size: 16px; // change to whatever
+        font-size: 18px; // change to whatever
     }
 }
 
