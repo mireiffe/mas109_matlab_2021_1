@@ -1,0 +1,79 @@
+\contentsline {chapter}{\numberline {1}Matlab Basics and Programming }{5}%
+\contentsline {section}{\numberline {1.1}Basic Command}{6}%
+\contentsline {subsection}{\numberline {1.1.1}Matrix}{6}%
+\contentsline {subsection}{\numberline {1.1.2}Variable}{7}%
+\contentsline {subsection}{\numberline {1.1.3}Functions}{8}%
+\contentsline {subsection}{\numberline {1.1.4}Logic operation}{9}%
+\contentsline {subsection}{\numberline {1.1.5}Colon}{10}%
+\contentsline {subsection}{\numberline {1.1.6}Other features}{11}%
+\contentsline {section}{\numberline {1.2}Programming in Matlab}{12}%
+\contentsline {subsection}{\numberline {1.2.1}Assignment Statement}{12}%
+\contentsline {subsection}{\numberline {1.2.2}Conditional Statement}{13}%
+\contentsline {subsection}{\numberline {1.2.3}For Loop}{14}%
+\contentsline {subsection}{\numberline {1.2.4}While Loop Statement}{16}%
+\contentsline {subsection}{\numberline {1.2.5}Recursion}{17}%
+\contentsline {subsection}{\numberline {1.2.6}Other Variety of Programs}{18}%
+\contentsline {subsection}{\numberline {1.2.7}Script}{19}%
+\contentsline {subsection}{\numberline {1.2.8}Proposal for Better Programming}{19}%
+\contentsline {section}{\numberline {1.3}Graphics}{21}%
+\contentsline {subsection}{\numberline {1.3.1}2-D Graph}{21}%
+\contentsline {subsubsection}{Label}{22}%
+\contentsline {subsubsection}{Drawing Many Graphs on the Same Axis}{22}%
+\contentsline {subsubsection}{Form of Line, Output Symbol, and Color}{23}%
+\contentsline {subsubsection}{Axis Scale}{23}%
+\contentsline {subsubsection}{Drawing Many Axes Using Subplot}{24}%
+\contentsline {subsubsection}{figure, clf, cla}{25}%
+\contentsline {subsubsection}{Inputs related to graphics}{25}%
+\contentsline {subsubsection}{Logarithmic plot}{26}%
+\contentsline {subsubsection}{Polar Coordinate}{26}%
+\contentsline {subsubsection}{Drawing a Graph of a Function that Changes Quickly}{27}%
+\contentsline {subsubsection}{Many Commands related to 2 Dimensional Graphs}{27}%
+\contentsline {subsection}{\numberline {1.3.2}3 Dimensional Graph}{28}%
+\contentsline {subsubsection}{Plot3}{29}%
+\contentsline {subsubsection}{Mesh Surface}{29}%
+\contentsline {subsubsection}{Drawing Contour}{31}%
+\contentsline {subsubsection}{Deletion of Curved Surface Due to NaN(Not a Number)}{32}%
+\contentsline {subsubsection}{quiver}{33}%
+\contentsline {subsubsection}{Pseudocolor}{34}%
+\contentsline {subsubsection}{Visualization of matrix}{35}%
+\contentsline {subsubsection}{Rotating 3 Dimensional Graph}{35}%
+\contentsline {subsubsection}{Lighting}{36}%
+\contentsline {chapter}{\numberline {2}Systems of Linear Equations}{37}%
+\contentsline {section}{\numberline {2.1}Introduction to Systems of Linear Equatios}{37}%
+\contentsline {section}{\numberline {2.2}Solving Linear Ssytems by Row Reduction}{37}%
+\contentsline {chapter}{\numberline {3}Matrices and Matrix Algebra}{41}%
+\contentsline {section}{\numberline {3.1}Operations on Matrices}{41}%
+\contentsline {section}{\numberline {3.2}Inverses; Algebraic Properties of Matrices}{41}%
+\contentsline {section}{\numberline {3.3}Elementary Matrices; A Method for Finding $A^{-1}$}{43}%
+\contentsline {section}{\numberline {3.4}Subspaces and Linear Independence}{44}%
+\contentsline {section}{\numberline {3.5}The Geometry of Linear Systems}{45}%
+\contentsline {section}{\numberline {3.6}Matrices with Special Forms}{46}%
+\contentsline {section}{\numberline {3.7}Matrix Factorizations; $LU$-Decomposition}{48}%
+\contentsline {chapter}{\numberline {4}Determinants}{55}%
+\contentsline {section}{\numberline {4.1}Determinants; cofactor Expansion}{55}%
+\contentsline {section}{\numberline {4.2}Properties of Determinants}{57}%
+\contentsline {section}{\numberline {4.3}Cramer's Rule; Formula for $A^{-1}$; Applications}{60}%
+\contentsline {section}{\numberline {4.4}A First Look at Eigenvalues and Eigenvectors}{61}%
+\contentsline {chapter}{\numberline {5}Matrix Models}{65}%
+\contentsline {chapter}{\numberline {6}Linear Transformations}{67}%
+\contentsline {section}{\numberline {6.1}Matrices as Transformations}{67}%
+\contentsline {section}{\numberline {6.2}Geometry of Linear Operators}{70}%
+\contentsline {section}{\numberline {6.3}Kernel and Range}{71}%
+\contentsline {section}{\numberline {6.4}Composition and Invertibility of Linear Transformations}{72}%
+\contentsline {chapter}{\numberline {7}Dimension and Structure}{75}%
+\contentsline {section}{\numberline {7.1}Basis and Dimension}{75}%
+\contentsline {section}{\numberline {7.2}Properties of Bases}{76}%
+\contentsline {section}{\numberline {7.3}The Fundamental Spaces of a Matrix}{79}%
+\contentsline {section}{\numberline {7.4}The Dimension Theorem and Its Implications}{85}%
+\contentsline {section}{\numberline {7.5}The Rank Theorem and Its Implications}{87}%
+\contentsline {section}{\numberline {7.6}The Pivot Theorem and Its Implications}{88}%
+\contentsline {section}{\numberline {7.7}The Projection Theorem and Its Implications}{90}%
+\contentsline {section}{\numberline {7.8}Best Approximation and Least Squares}{92}%
+\contentsline {section}{\numberline {7.9}Orthonormal Bases and the Gram Schmidt Process}{94}%
+\contentsline {section}{\numberline {7.10}$QR-$Decomposition; Householder Transformations}{99}%
+\contentsline {section}{\numberline {7.11}Coordinates with Respect to a Basis}{100}%
+\contentsline {chapter}{\numberline {8}Diagonalization}{103}%
+\contentsline {section}{\numberline {8.1}Matrix Representations of Linear Transformations}{103}%
+\contentsline {section}{\numberline {8.2}Similarity and Diagonalizability}{105}%
+\contentsline {section}{\numberline {8.3}Orthogonal Diagonalizability; Functions of a Matrix}{107}%
+\contentsline {section}{\numberline {8.4}Quadratic Forms}{110}%

@@ -1,0 +1,35 @@
+\documentclass[%draft
+]{book}
+\usepackage{subfigure,epsfig,amsmath,amssymb,float}
+\usepackage{hangul}
+
+
+%=========================================================
+\newcommand{\defh}{\hspace{1mm}$\hat{}$\hspace{1mm}}
+\newcommand{\defhh}{\hspace{.3mm} \hat{} \hspace{.3mm}}
+\newcommand{\vs}{\par \vspace{.3in}}
+\newcommand{\vv}{\par \vspace{.1in}}
+\newcommand{\vn}{\vv\noindent}
+\newcommand{\nnline}{\vn}
+\newcommand{\doublespace}{\addtolength{\baselineskip}{.13\baselineskip}}
+
+\newtheorem{example}{Example}
+\newtheorem{problem}{Problem}
+%=========================================================
+
+%=========================================================
+\floatstyle{ruled}
+\newfloat{alg}{tnp}{lop}[chapter]
+\floatname{alg}{ALGORITHM}
+%=========================================================
+
+\begin{document}
+%\input Maple.tex
+\input Matlabh.tex
+%\input Matlab_graph.tex
+%\chapter{Calculating $\pi$}
+%\input cal_of_variations.tex
+%\input Tractrix.tex  %교정중임
+%\input Ball.tex      %교정중임
+%\input appendix.tex  %교정중임
+\end{document}

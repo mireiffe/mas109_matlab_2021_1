@@ -1,0 +1,1822 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.2.26)  3 MAR 2021 10:28
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**"/home/omq/matlab_2021/Intro/Learning MATLAB with Linear Algebra (Jeon, Lee)/main"
+(/home/omq/matlab_2021/Intro/Learning MATLAB with Linear Algebra (Jeon, Lee)/main.tex
+LaTeX2e <2020-02-02> patch level 2
+L3 programming layer <2020-02-14> (/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2019/12/20 v1.4l Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk10.clo
+File: bk10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\c@part=\count167
+\c@chapter=\count168
+\c@section=\count169
+\c@subsection=\count170
+\c@subsubsection=\count171
+\c@paragraph=\count172
+\c@subparagraph=\count173
+\c@figure=\count174
+\c@table=\count175
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip49
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+ (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks14
+\ex@=\dimen135
+)) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen136
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count176
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count177
+\leftroot@=\count178
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count179
+\DOTSCASE@=\count180
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box45
+\strutbox@=\box46
+\big@size=\dimen137
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count181
+\c@MaxMatrixCols=\count182
+\dotsspace@=\muskip16
+\c@parentequation=\count183
+\dspbrk@lvl=\count184
+\tag@help=\toks15
+\row@=\count185
+\column@=\count186
+\maxfields@=\count187
+\andhelp@=\toks16
+\eqnshift@=\dimen138
+\alignsep@=\dimen139
+\tagshift@=\dimen140
+\tagwidth@=\dimen141
+\totwidth@=\dimen142
+\lineht@=\dimen143
+\@envbody=\toks17
+\multlinegap=\skip50
+\multlinetaggap=\skip51
+\mathdisplay@stack=\toks18
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
+) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count188
+\float@exts=\toks19
+\float@box=\box47
+\@float@everytoks=\toks20
+\@floatcapt=\box48
+) (/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
+\subfigtopskip=\skip52
+\subfigcapskip=\skip53
+\subfigcaptopadj=\dimen144
+\subfigbottomskip=\skip54
+\subfigcapmargin=\dimen145
+\subfiglabelskip=\skip55
+\c@subfigure=\count189
+\c@lofdepth=\count190
+\c@subtable=\count191
+\c@lotdepth=\count192
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip56
+\subfig@bottom=\skip57
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/epsfig.sty
+Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks21
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen146
+\Gin@req@width=\dimen147
+)
+\epsfxsize=\dimen148
+\epsfysize=\dimen149
+) (/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2017/10/31 v2.20.4
+\thm@style=\toks22
+\thm@bodyfont=\toks23
+\thm@headfont=\toks24
+\thm@notefont=\toks25
+\thm@headpunct=\toks26
+\thm@preskip=\skip58
+\thm@postskip=\skip59
+\thm@headsep=\skip60
+\dth@everypar=\toks27
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2019/11/23 v1.2a Standard LaTeX Color (DPC)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+)
+\c@example=\count193
+\c@problem=\count194
+\c@Theorem=\count195
+\@float@every@alg=\toks28
+\c@alg=\count196
+ (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count197
+\l__pdf_internal_box=\box49
+)
+No file main.aux.
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count198
+\scratchdimen=\dimen150
+\scratchbox=\box50
+\nofMPsegments=\count199
+\nofMParguments=\count266
+\everyMPshowfont=\toks29
+\MPscratchCnt=\count267
+\MPscratchDim=\dimen151
+\MPnumerator=\count268
+\makeMPintoPDFobject=\count269
+\everyMPtoPDFconversion=\toks30
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+LaTeX Font Info:    Trying to load font information for U+msa on input line 49.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 49.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1
+
+
+
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
+\c@prob=\count270
+\c@exer=\count271
+
+No file main.toc.
+\tf@toc=\write3
+\openout3 = `main.toc'.
+
+(./Matlabe.tex [3
+
+] [4
+
+]
+Chapter 1.
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 7.
+[5] [6] [7] [8] [9]
+LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 34.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmtt.fd
+File: ts1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+
+LaTeX Font Warning: Font shape `TS1/cmtt/bx/n' undefined
+(Font)              using `TS1/cmtt/m/n' instead
+(Font)              for symbol `textdollar' on input line 34.
+
+[10]
+
+LaTeX Warning: Reference `A-Matlab' on page 11 undefined on input line 39.
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 65--65
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--65
+
+ []
+
+[12] [13]
+Underfull \hbox (badness 10000) in paragraph at lines 91--91
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--91
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 114--114
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 114--114
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [14]
+Underfull \hbox (badness 10000) in paragraph at lines 138--138
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 138--138
+
+ []
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 164--164
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 164--164
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [16]
+Underfull \hbox (badness 10000) in paragraph at lines 177--177
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 177--177
+
+ []
+
+[17] [18] [19] [20]
+Package epstopdf Info: Source file: <./fig-matlab/examplesofplota.eps>
+(epstopdf)                    date: 2019-10-04 14:24:53
+(epstopdf)                    size: 9040 bytes
+(epstopdf)             Output file: <./fig-matlab/examplesofplota-eps-converted-to.pdf>
+(epstopdf)                    date: 2021-03-03 10:26:43
+(epstopdf)                    size: 5336 bytes
+(epstopdf)             Command: <repstopdf --outfile=./fig-matlab/examplesofplota-eps-converted-to.pdf ./fig-matlab/examplesofplota.eps>
+(epstopdf)             \includegraphics on input line 231.
+Package epstopdf Info: Output file is already uptodate.
+<./fig-matlab/examplesofplota-eps-converted-to.pdf, id=78, 474.77374pt x 378.41376pt>
+File: ./fig-matlab/examplesofplota-eps-converted-to.pdf Graphic file (type pdf)
+<use ./fig-matlab/examplesofplota-eps-converted-to.pdf>
+Package pdftex.def Info: ./fig-matlab/examplesofplota-eps-converted-to.pdf  used on input line 231.
+(pdftex.def)             Requested size: 155.24895pt x 123.73941pt.
+Package epstopdf Info: Source file: <./fig-matlab/examplesofplotb.eps>
+(epstopdf)                    date: 2019-10-04 14:24:47
+(epstopdf)                    size: 8515 bytes
+(epstopdf)             Output file: <./fig-matlab/examplesofplotb-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-10-04 14:24:53
+(epstopdf)                    size: 4450 bytes
+(epstopdf)             Command: <repstopdf --outfile=./fig-matlab/examplesofplotb-eps-converted-to.pdf ./fig-matlab/examplesofplotb.eps>
+(epstopdf)             \includegraphics on input line 231.
+Package epstopdf Info: Output file is already uptodate.
+<./fig-matlab/examplesofplotb-eps-converted-to.pdf, id=79, 471.7625pt x 378.41376pt>
+File: ./fig-matlab/examplesofplotb-eps-converted-to.pdf Graphic file (type pdf)
+<use ./fig-matlab/examplesofplotb-eps-converted-to.pdf>
+Package pdftex.def Info: ./fig-matlab/examplesofplotb-eps-converted-to.pdf  used on input line 231.
+(pdftex.def)             Requested size: 155.24895pt x 124.53047pt.
+
+
+./Matlabe.tex:232: Package inputenc Error: Unicode character 명 (U+BA85)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.232 \caption{{\tt plot} 명령의 예}
+                                         \label{plot}
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Matlabe.tex:232: Package inputenc Error: Unicode character 령 (U+B839)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.232 \caption{{\tt plot} 명령의 예}
+                                         \label{plot}
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Matlabe.tex:232: Package inputenc Error: Unicode character 의 (U+C758)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.232 \caption{{\tt plot} 명령의 예}
+                                         \label{plot}
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Matlabe.tex:232: Package inputenc Error: Unicode character 예 (U+C608)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.232 \caption{{\tt plot} 명령의 예}
+                                         \label{plot}
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+LaTeX Warning: Reference `plot' on page 21 undefined on input line 235.
+
+[21 <./fig-matlab/examplesofplota-eps-converted-to.pdf> <./fig-matlab/examplesofplotb-eps-converted-to.pdf>]
+Overfull \hbox (69.66792pt too wide) in paragraph at lines 241--241
+\OT1/cmr/bx/n/10 Practice ques-tion: \OT1/cmr/m/n/10 Draw a line con-nect-ing the fol-low-ing each points: $(0\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1)\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 (4\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 3)\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 (2\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 0)\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 (5\OML/cmm/m/it/10 ; \OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 2)$ 
+ []
+
+
+LaTeX Warning: Reference `plot' on page 22 undefined on input line 241.
+
+[22] [23]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 294.
+
+Package epstopdf Info: Source file: <./fig-matlab/foursubplots.eps>
+(epstopdf)                    date: 2019-10-04 14:25:02
+(epstopdf)                    size: 329364 bytes
+(epstopdf)             Output file: <./fig-matlab/foursubplots-eps-converted-to.pdf>
+(epstopdf)                    date: 2021-03-03 10:26:43
+(epstopdf)                    size: 48824 bytes
+(epstopdf)             Command: <repstopdf --outfile=./fig-matlab/foursubplots-eps-converted-to.pdf ./fig-matlab/foursubplots.eps>
+(epstopdf)             \includegraphics on input line 296.
+Package epstopdf Info: Output file is already uptodate.
+<./fig-matlab/foursubplots-eps-converted-to.pdf, id=100, 534.99875pt x 394.47375pt>
+File: ./fig-matlab/foursubplots-eps-converted-to.pdf Graphic file (type pdf)
+<use ./fig-matlab/foursubplots-eps-converted-to.pdf>
+Package pdftex.def Info: ./fig-matlab/foursubplots-eps-converted-to.pdf  used on input line 296.
+(pdftex.def)             Requested size: 312.9803pt x 230.78125pt.
+
+./Matlabe.tex:297: Package inputenc Error: Unicode character 개 (U+AC1C)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.297 3차원상에서 곡면의 회전}
+                                        
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Matlabe.tex:297: Package inputenc Error: Unicode character 의 (U+C758)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.297 3차원상에서 곡면의 회전}
+                                        
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Matlabe.tex:297: Package inputenc Error: Unicode character 차 (U+CC28)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.297 3차원상에서 곡면의 회전}
+                                        
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Matlabe.tex:297: Package inputenc Error: Unicode character 원 (U+C6D0)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.297 3차원상에서 곡면의 회전}
+                                        
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Matlabe.tex:297: Package inputenc Error: Unicode character 상 (U+C0C1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.297 3차원상에서 곡면의 회전}
+                                        
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Matlabe.tex:297: Package inputenc Error: Unicode character 에 (U+C5D0)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.297 3차원상에서 곡면의 회전}
+                                        
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Matlabe.tex:297: Package inputenc Error: Unicode character 서 (U+C11C)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.297 3차원상에서 곡면의 회전}
+                                        
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Matlabe.tex:297: Package inputenc Error: Unicode character 곡 (U+ACE1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.297 3차원상에서 곡면의 회전}
+                                        
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Matlabe.tex:297: Package inputenc Error: Unicode character 면 (U+BA74)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.297 3차원상에서 곡면의 회전}
+                                        
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Matlabe.tex:297: Package inputenc Error: Unicode character 의 (U+C758)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.297 3차원상에서 곡면의 회전}
+                                        
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Matlabe.tex:297: Package inputenc Error: Unicode character 회 (U+D68C)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.297 3차원상에서 곡면의 회전}
+                                        
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./Matlabe.tex:297: Package inputenc Error: Unicode character 전 (U+C804)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.297 3차원상에서 곡면의 회전}
+                                        
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+LaTeX Warning: Reference `subplot' on page 24 undefined on input line 300.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 317--317
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [24 <./fig-matlab/foursubplots-eps-converted-to.pdf>] [25]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 338.
+
+Package epstopdf Info: Source file: <./fig-matlab/logarithmicplot.eps>
+(epstopdf)                    date: 2019-10-04 14:25:02
+(epstopdf)                    size: 13998 bytes
+(epstopdf)             Output file: <./fig-matlab/logarithmicplot-eps-converted-to.pdf>
+(epstopdf)                    date: 2021-03-03 10:26:44
+(epstopdf)                    size: 7350 bytes
+(epstopdf)             Command: <repstopdf --outfile=./fig-matlab/logarithmicplot-eps-converted-to.pdf ./fig-matlab/logarithmicplot.eps>
+(epstopdf)             \includegraphics on input line 340.
+Package epstopdf Info: Output file is already uptodate.
+<./fig-matlab/logarithmicplot-eps-converted-to.pdf, id=114, 472.76625pt x 381.425pt>
+File: ./fig-matlab/logarithmicplot-eps-converted-to.pdf Graphic file (type pdf)
+<use ./fig-matlab/logarithmicplot-eps-converted-to.pdf>
+Package pdftex.def Info: ./fig-matlab/logarithmicplot-eps-converted-to.pdf  used on input line 340.
+(pdftex.def)             Requested size: 246.86423pt x 199.16928pt.
+
+LaTeX Warning: Reference `log' on page 26 undefined on input line 343.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 349.
+
+Package epstopdf Info: Source file: <./fig-matlab/polarplot.eps>
+(epstopdf)                    date: 2019-10-04 14:25:04
+(epstopdf)                    size: 13879 bytes
+(epstopdf)             Output file: <./fig-matlab/polarplot-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-10-04 14:25:04
+(epstopdf)                    size: 7681 bytes
+(epstopdf)             Command: <repstopdf --outfile=./fig-matlab/polarplot-eps-converted-to.pdf ./fig-matlab/polarplot.eps>
+(epstopdf)             \includegraphics on input line 351.
+Package epstopdf Info: Output file is already uptodate.
+<./fig-matlab/polarplot-eps-converted-to.pdf, id=115, 357.335pt x 357.335pt>
+File: ./fig-matlab/polarplot-eps-converted-to.pdf Graphic file (type pdf)
+<use ./fig-matlab/polarplot-eps-converted-to.pdf>
+Package pdftex.def Info: ./fig-matlab/polarplot-eps-converted-to.pdf  used on input line 351.
+(pdftex.def)             Requested size: 199.1684pt x 199.16928pt.
+[26 <./fig-matlab/logarithmicplot-eps-converted-to.pdf>]
+
+LaTeX Warning: Reference `polar' on page 27 undefined on input line 354.
+
+Package epstopdf Info: Source file: <./fig-matlab/ysina.eps>
+(epstopdf)                    date: 2019-10-04 14:25:05
+(epstopdf)                    size: 9583 bytes
+(epstopdf)             Output file: <./fig-matlab/ysina-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-10-04 14:25:05
+(epstopdf)                    size: 5642 bytes
+(epstopdf)             Command: <repstopdf --outfile=./fig-matlab/ysina-eps-converted-to.pdf ./fig-matlab/ysina.eps>
+(epstopdf)             \includegraphics on input line 364.
+Package epstopdf Info: Output file is already uptodate.
+<./fig-matlab/ysina-eps-converted-to.pdf, id=124, 484.81125pt x 378.41376pt>
+File: ./fig-matlab/ysina-eps-converted-to.pdf Graphic file (type pdf)
+<use ./fig-matlab/ysina-eps-converted-to.pdf>
+Package pdftex.def Info: ./fig-matlab/ysina-eps-converted-to.pdf  used on input line 364.
+(pdftex.def)             Requested size: 155.24895pt x 121.1757pt.
+Package epstopdf Info: Source file: <./fig-matlab/ysinb.eps>
+(epstopdf)                    date: 2019-10-04 14:25:07
+(epstopdf)                    size: 14411 bytes
+(epstopdf)             Output file: <./fig-matlab/ysinb-eps-converted-to.pdf>
+(epstopdf)                    date: 2021-03-03 10:26:44
+(epstopdf)                    size: 10164 bytes
+(epstopdf)             Command: <repstopdf --outfile=./fig-matlab/ysinb-eps-converted-to.pdf ./fig-matlab/ysinb.eps>
+(epstopdf)             \includegraphics on input line 364.
+Package epstopdf Info: Output file is already uptodate.
+<./fig-matlab/ysinb-eps-converted-to.pdf, id=125, 484.81125pt x 378.41376pt>
+File: ./fig-matlab/ysinb-eps-converted-to.pdf Graphic file (type pdf)
+<use ./fig-matlab/ysinb-eps-converted-to.pdf>
+Package pdftex.def Info: ./fig-matlab/ysinb-eps-converted-to.pdf  used on input line 364.
+(pdftex.def)             Requested size: 155.24895pt x 121.1757pt.
+
+LaTeX Warning: Reference `sin' on page 27 undefined on input line 368.
+
+
+LaTeX Warning: Reference `sin' on page 27 undefined on input line 368.
+
+[27 <./fig-matlab/polarplot-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <./fig-matlab/plot3a.eps>
+(epstopdf)                    date: 2019-10-04 14:25:06
+(epstopdf)                    size: 8555 bytes
+(epstopdf)             Output file: <./fig-matlab/plot3a-eps-converted-to.pdf>
+(epstopdf)                    date: 2021-03-03 10:26:44
+(epstopdf)                    size: 5254 bytes
+(epstopdf)             Command: <repstopdf --outfile=./fig-matlab/plot3a-eps-converted-to.pdf ./fig-matlab/plot3a.eps>
+(epstopdf)             \includegraphics on input line 392.
+Package epstopdf Info: Output file is already uptodate.
+<./fig-matlab/plot3a-eps-converted-to.pdf, id=134, 488.82625pt x 373.395pt>
+File: ./fig-matlab/plot3a-eps-converted-to.pdf Graphic file (type pdf)
+<use ./fig-matlab/plot3a-eps-converted-to.pdf>
+Package pdftex.def Info: ./fig-matlab/plot3a-eps-converted-to.pdf  used on input line 392.
+(pdftex.def)             Requested size: 155.24895pt x 118.58862pt.
+Package epstopdf Info: Source file: <./fig-matlab/exampleofplot3b.eps>
+(epstopdf)                    date: 2019-10-04 14:24:53
+(epstopdf)                    size: 20802 bytes
+(epstopdf)             Output file: <./fig-matlab/exampleofplot3b-eps-converted-to.pdf>
+(epstopdf)                    date: 2021-03-03 10:26:45
+(epstopdf)                    size: 9307 bytes
+(epstopdf)             Command: <repstopdf --outfile=./fig-matlab/exampleofplot3b-eps-converted-to.pdf ./fig-matlab/exampleofplot3b.eps>
+(epstopdf)             \includegraphics on input line 392.
+Package epstopdf Info: Output file is already uptodate.
+<./fig-matlab/exampleofplot3b-eps-converted-to.pdf, id=135, 503.8825pt x 383.4325pt>
+File: ./fig-matlab/exampleofplot3b-eps-converted-to.pdf Graphic file (type pdf)
+<use ./fig-matlab/exampleofplot3b-eps-converted-to.pdf>
+Package pdftex.def Info: ./fig-matlab/exampleofplot3b-eps-converted-to.pdf  used on input line 392.
+(pdftex.def)             Requested size: 155.24895pt x 118.13736pt.
+ [28 <./fig-matlab/ysina-eps-converted-to.pdf> <./fig-matlab/ysinb-eps-converted-to.pdf>]
+
+LaTeX Warning: Reference `plot3' on page 29 undefined on input line 396.
+
+
+LaTeX Warning: Reference `plot3' on page 29 undefined on input line 396.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 407--407
+
+ []
+
+[29 <./fig-matlab/plot3a-eps-converted-to.pdf> <./fig-matlab/exampleofplot3b-eps-converted-to.pdf>]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 443.
+
+Package epstopdf Info: Source file: <./fig-matlab/surface.eps>
+(epstopdf)                    date: 2019-10-04 14:25:07
+(epstopdf)                    size: 13345 bytes
+(epstopdf)             Output file: <./fig-matlab/surface-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-10-04 14:25:07
+(epstopdf)                    size: 5675 bytes
+(epstopdf)             Command: <repstopdf --outfile=./fig-matlab/surface-eps-converted-to.pdf ./fig-matlab/surface.eps>
+(epstopdf)             \includegraphics on input line 446.
+Package epstopdf Info: Output file is already uptodate.
+<./fig-matlab/surface-eps-converted-to.pdf, id=166, 449.68pt x 338.26375pt>
+File: ./fig-matlab/surface-eps-converted-to.pdf Graphic file (type pdf)
+<use ./fig-matlab/surface-eps-converted-to.pdf>
+Package pdftex.def Info: ./fig-matlab/surface-eps-converted-to.pdf  used on input line 446.
+(pdftex.def)             Requested size: 264.78055pt x 199.16928pt.
+[30]
+
+LaTeX Warning: Reference `surf' on page 31 undefined on input line 453.
+
+Package epstopdf Info: Source file: <./fig-matlab/contoura.eps>
+(epstopdf)                    date: 2019-10-04 14:24:55
+(epstopdf)                    size: 32181 bytes
+(epstopdf)             Output file: <./fig-matlab/contoura-eps-converted-to.pdf>
+(epstopdf)                    date: 2021-03-03 10:26:45
+(epstopdf)                    size: 11025 bytes
+(epstopdf)             Command: <repstopdf --outfile=./fig-matlab/contoura-eps-converted-to.pdf ./fig-matlab/contoura.eps>
+(epstopdf)             \includegraphics on input line 465.
+Package epstopdf Info: Output file is already uptodate.
+<./fig-matlab/contoura-eps-converted-to.pdf, id=170, 466.74374pt x 373.395pt>
+File: ./fig-matlab/contoura-eps-converted-to.pdf Graphic file (type pdf)
+<use ./fig-matlab/contoura-eps-converted-to.pdf>
+Package pdftex.def Info: ./fig-matlab/contoura-eps-converted-to.pdf  used on input line 465.
+(pdftex.def)             Requested size: 155.24895pt x 124.2007pt.
+Package epstopdf Info: Source file: <./fig-matlab/contour3b.eps>
+(epstopdf)                    date: 2019-10-04 14:24:46
+(epstopdf)                    size: 32139 bytes
+(epstopdf)             Output file: <./fig-matlab/contour3b-eps-converted-to.pdf>
+(epstopdf)                    date: 2021-03-03 10:26:45
+(epstopdf)                    size: 12586 bytes
+(epstopdf)             Command: <repstopdf --outfile=./fig-matlab/contour3b-eps-converted-to.pdf ./fig-matlab/contour3b.eps>
+(epstopdf)             \includegraphics on input line 465.
+Package epstopdf Info: Output file is already uptodate.
+<./fig-matlab/contour3b-eps-converted-to.pdf, id=171, 471.7625pt x 363.3575pt>
+File: ./fig-matlab/contour3b-eps-converted-to.pdf Graphic file (type pdf)
+<use ./fig-matlab/contour3b-eps-converted-to.pdf>
+Package pdftex.def Info: ./fig-matlab/contour3b-eps-converted-to.pdf  used on input line 465.
+(pdftex.def)             Requested size: 155.24895pt x 119.57567pt.
+
+LaTeX Warning: Reference `contour' on page 31 undefined on input line 469.
+
+
+LaTeX Warning: Reference `contour' on page 31 undefined on input line 469.
+
+Package epstopdf Info: Source file: <./fig-matlab/fig710a.eps>
+(epstopdf)                    date: 2019-10-04 14:24:57
+(epstopdf)                    size: 93968 bytes
+(epstopdf)             Output file: <./fig-matlab/fig710a-eps-converted-to.pdf>
+(epstopdf)                    date: 2021-03-03 10:26:46
+(epstopdf)                    size: 18452 bytes
+(epstopdf)             Command: <repstopdf --outfile=./fig-matlab/fig710a-eps-converted-to.pdf ./fig-matlab/fig710a.eps>
+(epstopdf)             \includegraphics on input line 477.
+Package epstopdf Info: Output file is already uptodate.
+<./fig-matlab/fig710a-eps-converted-to.pdf, id=172, 538.01pt x 401.5pt>
+File: ./fig-matlab/fig710a-eps-converted-to.pdf Graphic file (type pdf)
+<use ./fig-matlab/fig710a-eps-converted-to.pdf>
+Package pdftex.def Info: ./fig-matlab/fig710a-eps-converted-to.pdf  used on input line 477.
+(pdftex.def)             Requested size: 155.24895pt x 115.85612pt.
+Package epstopdf Info: Source file: <./fig-matlab/fig710b.eps>
+(epstopdf)                    date: 2019-10-04 14:24:59
+(epstopdf)                    size: 44788 bytes
+(epstopdf)             Output file: <./fig-matlab/fig710b-eps-converted-to.pdf>
+(epstopdf)                    date: 2021-03-03 10:26:46
+(epstopdf)                    size: 10798 bytes
+(epstopdf)             Command: <repstopdf --outfile=./fig-matlab/fig710b-eps-converted-to.pdf ./fig-matlab/fig710b.eps>
+(epstopdf)             \includegraphics on input line 477.
+Package epstopdf Info: Output file is already uptodate.
+<./fig-matlab/fig710b-eps-converted-to.pdf, id=173, 500.87125pt x 383.4325pt>
+File: ./fig-matlab/fig710b-eps-converted-to.pdf Graphic file (type pdf)
+<use ./fig-matlab/fig710b-eps-converted-to.pdf>
+Package pdftex.def Info: ./fig-matlab/fig710b-eps-converted-to.pdf  used on input line 477.
+(pdftex.def)             Requested size: 155.24895pt x 118.84529pt.
+[31 <./fig-matlab/surface-eps-converted-to.pdf>]
+
+LaTeX Warning: Reference `meshc' on page 32 undefined on input line 481.
+
+[32 <./fig-matlab/contoura-eps-converted-to.pdf> <./fig-matlab/contour3b-eps-converted-to.pdf> <./fig-matlab/fig710a-eps-converted-to.pdf> <./fig-matlab/fig710b-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 493--493
+
+ []
+
+
+LaTeX Warning: Reference `meshc' on page 33 undefined on input line 495.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 505.
+
+Package epstopdf Info: Source file: <./fig-matlab/fig711.eps>
+(epstopdf)                    date: 2019-10-04 14:25:00
+(epstopdf)                    size: 41155 bytes
+(epstopdf)             Output file: <./fig-matlab/fig711-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-10-04 14:25:00
+(epstopdf)                    size: 16001 bytes
+(epstopdf)             Command: <repstopdf --outfile=./fig-matlab/fig711-eps-converted-to.pdf ./fig-matlab/fig711.eps>
+(epstopdf)             \includegraphics on input line 507.
+Package epstopdf Info: Output file is already uptodate.
+<./fig-matlab/fig711-eps-converted-to.pdf, id=212, 477.785pt x 378.41376pt>
+File: ./fig-matlab/fig711-eps-converted-to.pdf Graphic file (type pdf)
+<use ./fig-matlab/fig711-eps-converted-to.pdf>
+Package pdftex.def Info: ./fig-matlab/fig711-eps-converted-to.pdf  used on input line 507.
+(pdftex.def)             Requested size: 251.47514pt x 199.16928pt.
+
+LaTeX Warning: Reference `grad' on page 33 undefined on input line 510.
+
+
+Overfull \hbox (6.28297pt too wide) in paragraph at lines 510--511
+\OT1/cmr/m/n/10 The fol-low-ing pro-gram draws the di-rec-tion of $\OMS/cmsy/m/n/10 r\OML/cmm/m/it/10 V$ \OT1/cmr/m/n/10 for each points in $\OML/cmm/m/it/10 x$\OT1/cmr/m/n/10 -$\OML/cmm/m/it/10 y$ \OT1/cmr/m/n/10 plane(refer
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 521--521
+
+ []
+
+[33]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 536.
+
+Package epstopdf Info: Source file: <./fig-matlab/viewmat.eps>
+(epstopdf)                    date: 2019-10-04 14:25:08
+(epstopdf)                    size: 177574 bytes
+(epstopdf)             Output file: <./fig-matlab/viewmat-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-10-04 14:25:08
+(epstopdf)                    size: 29739 bytes
+(epstopdf)             Command: <repstopdf --outfile=./fig-matlab/viewmat-eps-converted-to.pdf ./fig-matlab/viewmat.eps>
+(epstopdf)             \includegraphics on input line 538.
+Package epstopdf Info: Output file is already uptodate.
+<./fig-matlab/viewmat-eps-converted-to.pdf, id=217, 494.84875pt x 373.395pt>
+File: ./fig-matlab/viewmat-eps-converted-to.pdf Graphic file (type pdf)
+<use ./fig-matlab/viewmat-eps-converted-to.pdf>
+Package pdftex.def Info: ./fig-matlab/viewmat-eps-converted-to.pdf  used on input line 538.
+(pdftex.def)             Requested size: 263.95241pt x 199.16928pt.
+[34 <./fig-matlab/fig711-eps-converted-to.pdf>]
+
+LaTeX Warning: Reference `mat' on page 35 undefined on input line 541.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 550--550
+
+ []
+
+
+LaTeX Warning: Reference `mat' on page 35 undefined on input line 555.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 568--568
+
+ []
+
+[35 <./fig-matlab/viewmat-eps-converted-to.pdf>]
+
+LaTeX Warning: Reference `mat' on page 36 undefined on input line 570.
+
+) (./section2.tex [36]
+Chapter 2.
+[37
+
+]
+Overfull \hbox (11.99689pt too wide) in paragraph at lines 95--95
+[]\OT1/cmtt/m/n/10 disp('b is a linear combination of x(1)*v1+x(2)*v2+x(3)*v3, where');[] 
+ []
+
+[38]) (./section3.tex [39] [40
+
+]
+Chapter 3.
+[41]
+Underfull \vbox (badness 6396) has occurred while \output is active []
+
+ [42] [43]
+Overfull \hbox (9.9851pt too wide) in paragraph at lines 215--216
+\OT1/cmr/m/n/10 (16\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 5\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 9\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 8)$, and $\OT1/cmr/bx/n/10 y \OT1/cmr/m/n/10 = (3\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 2\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 7)$. De-ter-mine whether $\OT1/cmr/bx/n/10 x$ \OT1/cmr/m/n/10 and $\OT1/cmr/bx/n/10 y$ \OT1/cmr/m/n/10 lie in $[]\OMS/cmsy/m/n/10 f[]\OML/cmm/m/it/10 ; []; []\OMS/cmsy/m/n/10 g$\OT1/cmr/m/n/10 . 
+ []
+
+[44] [45]
+Overfull \hbox (0.24724pt too wide) in paragraph at lines 376--376
+ []\OT1/cmtt/m/n/10 A = [ 2 11 3 ; -2 -11 -3; 8 35 9];  % Construct the matrix A.[] 
+ []
+
+[46]
+Overfull \hbox (57.99673pt too wide) in paragraph at lines 435--435
+ []\OT1/cmtt/m/n/10 disp('The sum of the absolute values of the entries in each column is');[] 
+ []
+
+
+Overfull \hbox (42.24687pt too wide) in paragraph at lines 435--435
+ []\OT1/cmtt/m/n/10 disp('The sum of the absolute values of the entries in each row is');[] 
+ []
+
+[47]
+Overfull \hbox (10.74715pt too wide) in paragraph at lines 460--460
+ []\OT1/cmtt/m/n/10 The sum of the absolute values of the entries in each column is[] 
+ []
+
+
+Overfull \hbox (10.42166pt too wide) in paragraph at lines 472--474
+[]\OT1/cmr/bx/n/10 Exercise 3.6. []\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 LU-decompositions\OT1/cmr/m/n/10 ) In this prob-lem, we find an $\OML/cmm/m/it/10 LU$\OT1/cmr/m/n/10 -decomposition
+ []
+
+[48] [49]
+Overfull \hbox (1.49698pt too wide) in paragraph at lines 562--562
+[]\OT1/cmtt/m/n/10 disp('The solution to Ax=b by the LU-decomposition is'); disp(x');[] 
+ []
+
+
+Underfull \vbox (badness 6396) has occurred while \output is active []
+
+ [50] [51]
+Overfull \hbox (6.74693pt too wide) in paragraph at lines 657--657
+[]\OT1/cmtt/m/n/10 disp('[L1 U1 P1]=lu(A1)'); disp('L1');disp(L1);disp('U1');disp(U1);[] 
+ []
+
+
+Overfull \hbox (11.99689pt too wide) in paragraph at lines 657--657
+[]\OT1/cmtt/m/n/10 disp('[L2 U2 P2]=lu(A2)'); disp('L2');disp(L2); disp('U2');disp(U2);[] 
+ []
+
+
+Overfull \hbox (11.99689pt too wide) in paragraph at lines 657--657
+[]\OT1/cmtt/m/n/10 disp('[L3 U3 P3]=lu(A3)'); disp('L3');disp(L3); disp('U3');disp(U3);[] 
+ []
+
+
+Underfull \vbox (badness 6396) has occurred while \output is active []
+
+ [52]) (./section4.tex [53] [54
+
+]
+Chapter 4.
+[55] [56] [57]
+Overfull \hbox (17.24684pt too wide) in paragraph at lines 209--209
+[]\OT1/cmtt/m/n/10 det_A = det(A); % Find the determinant of A by using the command det.[] 
+ []
+
+
+Overfull \hbox (11.99689pt too wide) in paragraph at lines 209--209
+[]\OT1/cmtt/m/n/10 [L U P] = lu(A); % We have a PLU-decomposition of A. (i.e., PA=LU ).[] 
+ []
+
+
+Overfull \hbox (43.49661pt too wide) in paragraph at lines 209--209
+[]\OT1/cmtt/m/n/10 % Or, you may use the command det for L, directly. (i.e., det_L = det(L)).[] 
+ []
+
+
+Overfull \hbox (43.49661pt too wide) in paragraph at lines 209--209
+[]\OT1/cmtt/m/n/10 % Or, you may use the command det for U, directly. (i.e., det_U = det(U)).[] 
+ []
+
+
+Overfull \hbox (43.49661pt too wide) in paragraph at lines 209--209
+[]\OT1/cmtt/m/n/10 % Or, you may use the command det for P, directly. (i.e., det_P = det(P)).[] 
+ []
+
+
+Overfull \hbox (48.74657pt too wide) in paragraph at lines 209--209
+[]\OT1/cmtt/m/n/10 disp('The determinant of A by using the LU-decomposition is'); disp(det_A);[] 
+ []
+
+[58]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [59] [60]
+Overfull \hbox (53.99652pt too wide) in paragraph at lines 387--387
+[] \OT1/cmtt/m/n/10 -0.067716707308095  0.278176502030497  0.322465582156500  0.902246213399589[] 
+ []
+
+
+Overfull \hbox (53.99652pt too wide) in paragraph at lines 387--387
+[]  \OT1/cmtt/m/n/10 0.275562522991092  0.197508356444458 -0.885771126913498  0.316962546342283[] 
+ []
+
+[61]
+Overfull \hbox (53.99652pt too wide) in paragraph at lines 387--387
+[] \OT1/cmtt/m/n/10 -0.833621905475750 -0.103812731179200 -0.147042873144503  0.522183711938150[] 
+ []
+
+
+Overfull \hbox (53.99652pt too wide) in paragraph at lines 387--387
+[] \OT1/cmtt/m/n/10 -0.705886578756789 -0.456750139195570  0.041522739926871  0.539795619049310[] 
+ []
+
+<./fig-matlab/figure.jpg, id=322, 230.36063pt x 228.855pt>
+File: ./fig-matlab/figure.jpg Graphic file (type jpg)
+<use ./fig-matlab/figure.jpg>
+Package pdftex.def Info: ./fig-matlab/figure.jpg  used on input line 402.
+(pdftex.def)             Requested size: 113.81102pt x 113.0653pt.
+[62 <./fig-matlab/figure.jpg>]
+Overfull \hbox (11.99689pt too wide) in paragraph at lines 448--448
+[]   \OT1/cmtt/m/n/10 -0.0000  -0.0000  -0.0000  0.0000  0.0000  0.0000  4.0000  4.0000[] 
+ []
+
+
+Overfull \hbox (38.24666pt too wide) in paragraph at lines 448--448
+[]   \OT1/cmtt/m/n/10 -0.0000  -0.0000  -0.0000 -0.0000   0   0.0000  0.0000  4.0000  5.0000[] 
+ []
+
+
+Overfull \hbox (69.74638pt too wide) in paragraph at lines 448--448
+[]   \OT1/cmtt/m/n/10 -0.0000  -0.0000  -0.0000  0  0.0000  0.0000  0.0000  0.0000  5.0000  5.0000[] 
+ []
+
+) (./section5.tex [63] [64
+
+]
+Chapter 5.
+) (./section6.tex [65] [66
+
+]
+Chapter 6.
+[67] [68] [69] [70] [71]
+Overfull \hbox (13.17119pt too wide) in paragraph at lines 248--248
+[]\OT1/cmr/bx/n/14.4 Composition and In-vert-ibil-ity of Lin-ear Trans-
+ []
+
+
+Overfull \hbox (11.99689pt too wide) in paragraph at lines 297--297
+[]\OT1/cmtt/m/n/10 Rz = [cos(theta1) -sin(theta1) 0; sin(theta1) cos(theta1) 0; 0 0 1];[] 
+ []
+
+
+Overfull \hbox (11.99689pt too wide) in paragraph at lines 297--297
+[]\OT1/cmtt/m/n/10 Rx = [1 0 0; 0 cos(theta2) -sin(theta2); 0 sin(theta2) cos(theta2)];[] 
+ []
+
+
+Overfull \hbox (11.99689pt too wide) in paragraph at lines 297--297
+[]\OT1/cmtt/m/n/10 Ry = [cos(theta3) 0 sin(theta3); 0 1 0; -sin(theta3) 0 cos(theta3)];[] 
+ []
+
+
+Overfull \hbox (48.74657pt too wide) in paragraph at lines 297--297
+[]\OT1/cmtt/m/n/10 % by finding the eigenvector of R corresponding to the eigenvalue lambda=1.[] 
+ []
+
+[72]
+Overfull \hbox (53.99652pt too wide) in paragraph at lines 297--297
+[]\OT1/cmtt/m/n/10 % Note that w=(-x2,x1,0) is orthogonal to the axis of rotation x=(x1,x2,x3).[] 
+ []
+
+) (./section7.tex
+Overfull \hbox (30.04147pt too wide) has occurred while \output is active
+\OT1/cmr/m/sl/10 6.4.  COMPOSITION AND INVERTIBILITY OF LINEAR TRANSFORMATIONS \OT1/cmr/m/n/10 73
+ []
+
+[73] [74
+
+]
+Chapter 7.
+[75]
+Overfull \hbox (0.24724pt too wide) in paragraph at lines 112--112
+ []      \OT1/cmtt/m/n/10 fprintf('* You enter %d: statement (a) *\n', case_num);[] 
+ []
+
+
+Overfull \hbox (31.74696pt too wide) in paragraph at lines 112--112
+ []        \OT1/cmtt/m/n/10 disp('Given vectors form a basis of 4 dimensional space.');[] 
+ []
+
+
+Overfull \hbox (68.49664pt too wide) in paragraph at lines 112--112
+ []        \OT1/cmtt/m/n/10 disp('Given vectors do not form a basis of 4 dimensional space.');[] 
+ []
+
+
+Overfull \hbox (0.24724pt too wide) in paragraph at lines 112--112
+ []      \OT1/cmtt/m/n/10 fprintf('* You enter %d: statement (g) *\n', case_num);[] 
+ []
+
+
+Overfull \hbox (31.74696pt too wide) in paragraph at lines 112--112
+ []        \OT1/cmtt/m/n/10 disp('Given vectors form a basis of 4 dimensional space.');[] 
+ []
+
+
+Overfull \hbox (68.49664pt too wide) in paragraph at lines 112--112
+ []        \OT1/cmtt/m/n/10 disp('Given vectors do not form a basis of 4 dimensional space.');[] 
+ []
+
+[76]
+Overfull \hbox (89.49646pt too wide) in paragraph at lines 140--140
+ []\OT1/cmtt/m/n/10 >> v1=[1 0 0 0]'; v2=[0 2 0 0]'; v3=[0 0 4 5]'; v4=[0 0 0 -1]'; v5=[0 0 0 1]';[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 160--169
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 160--169
+
+ []
+
+[77]
+Overfull \hbox (31.74696pt too wide) in paragraph at lines 177--192
+[]        []\OT1/cmtt/m/n/10 disp('Given vectors form a basis of 4 dimensional space.'); 
+ []
+
+
+Overfull \hbox (68.49664pt too wide) in paragraph at lines 177--192
+[]        \OT1/cmtt/m/n/10 disp('Given vectors do not form a basis of 4 dimensional space.'); 
+ []
+
+
+Overfull \hbox (31.74696pt too wide) in paragraph at lines 177--192
+[]        \OT1/cmtt/m/n/10 disp('Given vectors form a basis of 4 dimensional space.'); 
+ []
+
+
+Overfull \hbox (68.49664pt too wide) in paragraph at lines 177--192
+[]        \OT1/cmtt/m/n/10 disp('Given vectors do not form a basis of 4 dimensional space.'); 
+ []
+
+
+Overfull \hbox (34.39053pt too wide) in paragraph at lines 197--198
+[][]   \OT1/cmtt/m/n/10 disp('Given vectors form a basis of 4 dimensional space.');[] 
+ []
+
+
+Overfull \hbox (18.64067pt too wide) in paragraph at lines 201--202
+[][]   \OT1/cmtt/m/n/10 disp('Given vectors do not form a basis of 4 dimensional
+ []
+
+
+Overfull \hbox (36.99692pt too wide) in paragraph at lines 214--214
+ []\OT1/cmtt/m/n/10 >> v1=[-1 0 1 0]'; v2=[2 3 -2 6]';  v3=[0 -1 2 0]'; v4 = [0 0 1 5]';[] 
+ []
+
+[78]
+Overfull \hbox (26.49701pt too wide) in paragraph at lines 234--234
+ []\OT1/cmtt/m/n/10 >> v1=[a;b;c;d]; v2=[-b;a;d;-c]; v3=[-c;-d;a;b]; v4 = [-d;c;-b;a];[] 
+ []
+
+
+Overfull \hbox (22.4968pt too wide) in paragraph at lines 289--289
+[]\OT1/cmtt/m/n/10 dim(row(A))=dim(col(A)): 3,   dim(null(A)): 2,   dim(null(A_trans)): 1[] 
+ []
+
+
+Overfull \hbox (32.9967pt too wide) in paragraph at lines 289--289
+[]\OT1/cmtt/m/n/10 == Basis of the fundamental spaces of a given matrix (in row vectors) ==[] 
+ []
+
+[79]
+Overfull \hbox (68.49664pt too wide) in paragraph at lines 321--321
+ []  \OT1/cmtt/m/n/10 fprintf('== Dimension of the fundamental spaces of given matrix == \n');[] 
+ []
+
+
+Overfull \hbox (120.99619pt too wide) in paragraph at lines 321--321
+ []  \OT1/cmtt/m/n/10 fprintf('\t dim(null(A)): %d,\t dim(null(A_trans)): %d \n\n', nullity, nullity_T);[] 
+ []
+
+
+Overfull \hbox (136.74605pt too wide) in paragraph at lines 321--321
+ []  \OT1/cmtt/m/n/10 fprintf('== Basis of the fundamental spaces of given matrix (in row vectors) == \n');[] 
+ []
+
+
+Overfull \hbox (52.74678pt too wide) in paragraph at lines 321--321
+ []  \OT1/cmtt/m/n/10 fprintf('\n*****************************************************\n');[] 
+ []
+
+
+Overfull \hbox (31.1162pt too wide) in paragraph at lines 327--328
+[]$\OML/cmm/m/it/10 A \OT1/cmr/m/n/10 = []$, $\OML/cmm/m/it/10 B \OT1/cmr/m/n/10 = []$, $\OML/cmm/m/it/10 C \OT1/cmr/m/n/10 = []$. 
+ []
+
+[80]
+Overfull \hbox (68.49664pt too wide) in paragraph at lines 394--394
+ []  \OT1/cmtt/m/n/10 fprintf('== Dimension of the fundamental spaces of given matrix == \n');[] 
+ []
+
+
+Overfull \hbox (52.74678pt too wide) in paragraph at lines 394--394
+ []  \OT1/cmtt/m/n/10 fprintf('\n*****************************************************\n');[] 
+ []
+
+
+Overfull \hbox (26.49701pt too wide) in paragraph at lines 404--404
+ []\OT1/cmtt/m/n/10 C=[1 3 2 1; -2 -6 0 -6 ;3 9 1 8; -1 -3 -3 -6; 1 3 2 1; 4 12 1 11];[] 
+ []
+
+[81]
+Overfull \hbox (26.49701pt too wide) in paragraph at lines 481--481
+ []\OT1/cmtt/m/n/10 dim(row(A))=dim(col(A)): 2, dim(null(A)): 3, dim(null(A_trans)): 2[] 
+ []
+
+
+Overfull \hbox (47.49683pt too wide) in paragraph at lines 481--481
+ []\OT1/cmtt/m/n/10 == Basis of the fundamental spaces of given matrix (in row vectors) ==[] 
+ []
+
+
+Overfull \hbox (26.49701pt too wide) in paragraph at lines 481--481
+ []\OT1/cmtt/m/n/10 dim(row(A))=dim(col(A)): 3, dim(null(A)): 2, dim(null(A_trans)): 1[] 
+ []
+
+
+Overfull \hbox (47.49683pt too wide) in paragraph at lines 481--481
+ []\OT1/cmtt/m/n/10 == Basis of the fundamental spaces of given matrix (in row vectors) ==[] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [82]
+Overfull \hbox (26.49701pt too wide) in paragraph at lines 481--481
+ []\OT1/cmtt/m/n/10 dim(row(A))=dim(col(A)): 3, dim(null(A)): 1, dim(null(A_trans)): 3[] 
+ []
+
+
+Overfull \hbox (47.49683pt too wide) in paragraph at lines 481--481
+ []\OT1/cmtt/m/n/10 == Basis of the fundamental spaces of given matrix (in row vectors) ==[] 
+ []
+
+[83]
+Overfull \hbox (10.74715pt too wide) in paragraph at lines 533--533
+ []\OT1/cmtt/m/n/10 A = sym([2 -1 3 5; 4 -3 1 3; 3 -2 3 4; 4 -1 15 17; 7 -6 -7 0]);[] 
+ []
+
+
+Overfull \hbox (36.99692pt too wide) in paragraph at lines 533--533
+ []\OT1/cmtt/m/n/10 disp(col_basis(:,1)'); disp(col_basis(:,2)'); disp(col_basis(:,3)');[] 
+ []
+
+
+Overfull \hbox (5.4972pt too wide) in paragraph at lines 560--560
+ []\OT1/cmtt/m/n/10 % Set a matrix A_transpose whose entries are symbolic objects.[] 
+ []
+
+
+Overfull \hbox (68.49664pt too wide) in paragraph at lines 560--560
+ []\OT1/cmtt/m/n/10 A_transpose = sym([2 -1 3 5; 4 -3 1 3; 3 -2 3 4; 4 -1 15 17; 7 -6 -7 0]');[] 
+ []
+
+
+Overfull \hbox (21.24706pt too wide) in paragraph at lines 560--560
+ []\OT1/cmtt/m/n/10 disp(rowbasis(:,1)'); disp(rowbasis(:,2)'); disp(rowbasis(:,3)');[] 
+ []
+
+[84]
+Overfull \hbox (57.99673pt too wide) in paragraph at lines 618--618
+ []\OT1/cmtt/m/n/10 % The command orth gives an orthonormal basis for the column space of A.[] 
+ []
+
+[85]
+Overfull \hbox (5.4972pt too wide) in paragraph at lines 681--681
+ []\OT1/cmtt/m/n/10 % m = the number of rows of A, n = the number of columns of A.[] 
+ []
+
+
+Overfull \hbox (10.74715pt too wide) in paragraph at lines 707--707
+ []\OT1/cmtt/m/n/10 % thus, n = the number of basis vectors of the null space of A.[] 
+ []
+
+[86]
+
+LaTeX Warning: Reference `ex1' on page 87 undefined on input line 739.
+
+
+Overfull \hbox (6.74693pt too wide) in paragraph at lines 777--777
+[]    \OT1/cmtt/m/n/10 K = min(m,n);   N = max(m,n);   % k : row number, N: col number[] 
+ []
+
+
+Overfull \hbox (48.74657pt too wide) in paragraph at lines 777--777
+[]                \OT1/cmtt/m/n/10 sub_A=selected_A(:,comb_col(jj, :));   % selected col index[] 
+ []
+
+
+Overfull \hbox (22.4968pt too wide) in paragraph at lines 777--777
+[]                \OT1/cmtt/m/n/10 if det(sub_A)~=0    % if non zeros determinant appears[] 
+ []
+
+
+Overfull \hbox (27.74675pt too wide) in paragraph at lines 777--777
+[]        \OT1/cmtt/m/n/10 k=k-1;  % if all submatrices of size k have a zero determinant,[] 
+ []
+
+[87]
+
+LaTeX Warning: Reference `ex1' on page 88 undefined on input line 783.
+
+
+Overfull \hbox (1.49698pt too wide) in paragraph at lines 792--792
+[]\OT1/cmtt/m/n/10 C=[1 3 2 1; -2 -6 0 -6 ;3 9 1 8; -1 -3 -3 -6; 1 3 2 1; 4 12 1 11];[] 
+ []
+
+
+Overfull \hbox (53.99652pt too wide) in paragraph at lines 792--792
+[]\OT1/cmtt/m/n/10 fprintf('my rank(A): %.5f, MATLAB rank(A): %.5f \n', CheckRank(A), rank(A));[] 
+ []
+
+
+Overfull \hbox (53.99652pt too wide) in paragraph at lines 792--792
+[]\OT1/cmtt/m/n/10 fprintf('my rank(B): %.5f, MATLAB rank(B): %.5f \n', CheckRank(B), rank(B));[] 
+ []
+
+
+Overfull \hbox (53.99652pt too wide) in paragraph at lines 792--792
+[]\OT1/cmtt/m/n/10 fprintf('my rank(C): %.5f, MATLAB rank(C): %.5f \n', CheckRank(C), rank(C));[] 
+ []
+
+
+LaTeX Warning: Reference `ex1' on page 88 undefined on input line 803.
+
+
+Overfull \hbox (22.4968pt too wide) in paragraph at lines 849--849
+[]\OT1/cmtt/m/n/10 % Find the reduced row echelon form R of A and the pivot columns of A.[] 
+ []
+
+[88]
+Overfull \hbox (6.74693pt too wide) in paragraph at lines 849--849
+[]\OT1/cmtt/m/n/10 disp('The pivot columns of the reduced row echelon form of A are');[] 
+ []
+
+[89]
+Overfull \hbox (11.99689pt too wide) in paragraph at lines 914--914
+[]\OT1/cmtt/m/n/10 A = [1 3 2 1; -2 -6 0 -6; 3 9 1 8; -1 -3 -3 -6; 1 3 2 1; 4 12 1 11];[] 
+ []
+
+
+Overfull \hbox (22.4968pt too wide) in paragraph at lines 914--914
+[]\OT1/cmtt/m/n/10 % Find the reduced row echelon form R of A and the pivot columns of A.[] 
+ []
+
+
+Overfull \hbox (6.74693pt too wide) in paragraph at lines 914--914
+[]\OT1/cmtt/m/n/10 disp('The pivot columns of the reduced row echelon form of A are');[] 
+ []
+
+
+Overfull \hbox (17.24684pt too wide) in paragraph at lines 914--914
+[]\OT1/cmtt/m/n/10 % From the result, the leading 1's in R occur in columns 1, 3, and 4.[] 
+ []
+
+
+Overfull \hbox (53.99652pt too wide) in paragraph at lines 914--914
+[]\OT1/cmtt/m/n/10 % Hence, the columns 1, 3, and 4 of A are a basis for the column space of A.[] 
+ []
+
+
+Overfull \hbox (1.49698pt too wide) in paragraph at lines 914--914
+[]\OT1/cmtt/m/n/10 % we can see that v2 = 3*v1, where v1 = A(:, 1), and v2 = A(:, 2).[] 
+ []
+
+[90]
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 961.
+
+
+Overfull \hbox (7.66109pt too wide) in paragraph at lines 961--962
+[]\OT1/cmr/m/n/10 Use the ma-trix ob-tained in part (a) to find $[][]\OT1/cmr/bx/n/10 x$\OT1/cmr/m/n/10 , where $\OT1/cmr/bx/n/10 x \OT1/cmr/m/n/10 = (1\OML/cmm/m/it/10 ;  \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 ;  \OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 3\OML/cmm/m/it/10 ;  \OT1/cmr/m/n/10 7)$. 
+ []
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 965.
+
+
+Overfull \hbox (22.4968pt too wide) in paragraph at lines 1002--1002
+[]\OT1/cmtt/m/n/10 % Find the reduced row echelon form R of A and the pivot columns of A.[] 
+ []
+
+
+Overfull \hbox (22.4968pt too wide) in paragraph at lines 1002--1002
+[]\OT1/cmtt/m/n/10 % M is the matrix whose columns are a basis for the column space of A.[] 
+ []
+
+
+Overfull \hbox (85.49625pt too wide) in paragraph at lines 1002--1002
+[]\OT1/cmtt/m/n/10 disp('The standard matrix for the orthogonal projection of R^4 onto W=col(A) is');[] 
+ []
+
+
+Overfull \hbox (43.49661pt too wide) in paragraph at lines 1002--1002
+[]\OT1/cmtt/m/n/10 disp('The projection of x onto the orthogonal complement of W=col(A) is');[] 
+ []
+
+
+Overfull \hbox (11.99689pt too wide) in paragraph at lines 1002--1002
+[]\OT1/cmtt/m/n/10 % As a check, the dot product of the two projections should be zero.[] 
+ []
+
+
+Overfull \hbox (48.74657pt too wide) in paragraph at lines 1002--1002
+[]\OT1/cmtt/m/n/10 disp('The dot product of the two projections is'); disp(dot(xproj, xperp));[] 
+ []
+
+
+Overfull \hbox (38.24666pt too wide) in paragraph at lines 1022--1022
+[]\OT1/cmtt/m/n/10 The standard matrix for the orthogonal projection of R^4 onto W=col(A) is[] 
+ []
+
+[91]
+Overfull \hbox (17.24684pt too wide) in paragraph at lines 1068--1068
+[]    \OT1/cmtt/m/n/10 fprintf('rank(A)=%d < %d  -> Not full column rank\n', rank_A, n);[] 
+ []
+
+[92]
+
+LaTeX Warning: Reference `eq1' on page 93 undefined on input line 1102.
+
+
+LaTeX Warning: Reference `eq2' on page 93 undefined on input line 1102.
+
+[93]
+<./fig-matlab/leastSq.jpg, id=427, 632.3625pt x 474.27188pt>
+File: ./fig-matlab/leastSq.jpg Graphic file (type jpg)
+<use ./fig-matlab/leastSq.jpg>
+Package pdftex.def Info: ./fig-matlab/leastSq.jpg  used on input line 1165.
+(pdftex.def)             Requested size: 256.0748pt x 192.05734pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (32.9967pt too wide) in paragraph at lines 1210--1210
+[]\OT1/cmtt/m/n/10 A = [w1 w2 w3]; % Construct a matrix A whose columns are w1, w2, and w3.[] 
+ []
+
+[94]
+Overfull \hbox (74.99634pt too wide) in paragraph at lines 1210--1210
+[]\OT1/cmtt/m/n/10 disp('The orthonormal basis {q1,q2,q3} for R^3 from {w1,w2,w3} are as follows:')[] 
+ []
+
+
+Overfull \hbox (90.7462pt too wide) in paragraph at lines 1210--1210
+[]\OT1/cmtt/m/n/10 disp('q1='); disp(Q(:,1)'); disp('q2='); disp(Q(:,2)'); disp('q3='); disp(Q(:,3)');[] 
+ []
+
+
+Overfull \hbox (32.9967pt too wide) in paragraph at lines 1224--1224
+[]\OT1/cmtt/m/n/10 The orthonormal basis {q1,q2,q3} for R^3 from {w1,w2,w3} are as follows:[] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [95 <./fig-matlab/leastSq.jpg>]
+Overfull \hbox (6.74693pt too wide) in paragraph at lines 1266--1266
+[]\OT1/cmtt/m/n/10 % Find an orthonormal basis for col(A) when A has full column rank.[] 
+ []
+
+
+Overfull \hbox (32.9967pt too wide) in paragraph at lines 1266--1266
+[]\OT1/cmtt/m/n/10 % Q is an m*n matrix whose columns form an orthonormal basis for col(A).[] 
+ []
+
+
+Overfull \hbox (32.9967pt too wide) in paragraph at lines 1361--1361
+[]\OT1/cmtt/m/n/10 % From the result of rref_A, the first three nonzero rows in rref_A form[] 
+ []
+
+
+Overfull \hbox (43.49661pt too wide) in paragraph at lines 1361--1361
+[]\OT1/cmtt/m/n/10 % Construct a matrix R_A whose columns are a basis for the row space of A.[] 
+ []
+
+
+Overfull \hbox (74.99634pt too wide) in paragraph at lines 1361--1361
+[]\OT1/cmtt/m/n/10 % Find an orthonormal basis for the column space of R_A by Gram-Schmidt process,[] 
+ []
+
+[96]
+Overfull \hbox (48.74657pt too wide) in paragraph at lines 1361--1361
+[]\OT1/cmtt/m/n/10 % which is the same as finding an orthonormal basis for the row space of A.[] 
+ []
+
+
+Overfull \hbox (11.99689pt too wide) in paragraph at lines 1361--1361
+[]\OT1/cmtt/m/n/10 disp('An orthonormal basis {a1, a2, a3} for the row space of A is');[] 
+ []
+
+
+Overfull \hbox (59.24648pt too wide) in paragraph at lines 1361--1361
+[]\OT1/cmtt/m/n/10 disp('a1 = '); disp(a1'); disp('a2 = '); disp(a2'); disp('a3 = '); disp(a3');[] 
+ []
+
+
+Overfull \hbox (69.74638pt too wide) in paragraph at lines 1361--1361
+[]\OT1/cmtt/m/n/10 % From the result of rref_A, the first three columns of A are the pivot columns[] 
+ []
+
+
+Overfull \hbox (59.24648pt too wide) in paragraph at lines 1361--1361
+[]\OT1/cmtt/m/n/10 % Construct a matrix C_A whose columns are a basis for the column space of A.[] 
+ []
+
+
+Overfull \hbox (74.99634pt too wide) in paragraph at lines 1361--1361
+[]\OT1/cmtt/m/n/10 % Find an orthonormal basis for the column space of C_A by Gram-Schmidt process,[] 
+ []
+
+
+Overfull \hbox (64.49643pt too wide) in paragraph at lines 1361--1361
+[]\OT1/cmtt/m/n/10 % which is the same as finding an orthonormal basis for the column space of A.[] 
+ []
+
+
+Overfull \hbox (27.74675pt too wide) in paragraph at lines 1361--1361
+[]\OT1/cmtt/m/n/10 disp('An orthonormal basis {b1, b2, b3} for the column space of A is');[] 
+ []
+
+
+Overfull \hbox (59.24648pt too wide) in paragraph at lines 1361--1361
+[]\OT1/cmtt/m/n/10 disp('b1 = '); disp(b1'); disp('b2 = '); disp(b2'); disp('b3 = '); disp(b3');[] 
+ []
+
+
+Overfull \hbox (48.74657pt too wide) in paragraph at lines 1361--1361
+[]\OT1/cmtt/m/n/10 % Construct a matrix N_A whose columns are a basis for the null space of A.[] 
+ []
+
+
+Overfull \hbox (74.99634pt too wide) in paragraph at lines 1361--1361
+[]\OT1/cmtt/m/n/10 % Find an orthonormal basis for the column space of N_A by Gram-Schmidt process,[] 
+ []
+
+
+Overfull \hbox (53.99652pt too wide) in paragraph at lines 1361--1361
+[]\OT1/cmtt/m/n/10 % which is the same as finding an orthonormal basis for the null space of A.[] 
+ []
+
+
+Overfull \hbox (6.74693pt too wide) in paragraph at lines 1361--1361
+[]\OT1/cmtt/m/n/10 % (4). Find an orthonormal basis for the null space of A transpose.[] 
+ []
+
+[97]
+Overfull \hbox (1.49698pt too wide) in paragraph at lines 1361--1361
+[]\OT1/cmtt/m/n/10 % Note that L^(-1)*P*A = U, where U is an upper triangular matrix.[] 
+ []
+
+
+Overfull \hbox (11.99689pt too wide) in paragraph at lines 1361--1361
+[]\OT1/cmtt/m/n/10 % Since E = L^(-1)*P is a product of elementary matrices s.t. E*A=U,[] 
+ []
+
+
+Overfull \hbox (53.99652pt too wide) in paragraph at lines 1361--1361
+[]\OT1/cmtt/m/n/10 % From the result of ref_par_A, we can see that ref_par_A([4:5], [1:4]) = 0.[] 
+ []
+
+
+Overfull \hbox (101.24611pt too wide) in paragraph at lines 1361--1361
+[]\OT1/cmtt/m/n/10 % Find an orthonormal basis for the column space of N_Atrans by Gram-Schmidt process,[] 
+ []
+
+
+Overfull \hbox (106.49606pt too wide) in paragraph at lines 1361--1361
+[]\OT1/cmtt/m/n/10 % which is the same as finding an orthonormal basis for the null space of A transpose.[] 
+ []
+
+
+Overfull \hbox (85.49625pt too wide) in paragraph at lines 1361--1361
+[]\OT1/cmtt/m/n/10 disp('An orthonormal basis {d1, d2} for the null space of the transpose of A is');[] 
+ []
+
+[98]
+Overfull \hbox (38.24666pt too wide) in paragraph at lines 1396--1396
+[]\OT1/cmtt/m/n/10 An orthonormal basis {d1, d2} for the null space of the transpose of A is[] 
+ []
+
+
+Overfull \hbox (3.48769pt too wide) in paragraph at lines 1409--1409
+[]$\OML/cmm/m/it/14.4 QR\OMS/cmsy/m/n/14.4 ^^@$\OT1/cmr/bx/n/14.4 Decomposition; House-holder Trans-for-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1412--1413
+
+ []
+
+
+LaTeX Warning: Reference `GS' on page 99 undefined on input line 1415.
+
+[99]
+Underfull \hbox (badness 10000) in paragraph at lines 1482--1483
+
+ []
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1486.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 1486.
+
+
+Overfull \hbox (15.43341pt too wide) in paragraph at lines 1496--1497
+[]\OT1/cmr/m/n/10 Find the co-or-di-nate ma-tri-ces with re-spect to $\OML/cmm/m/it/10 B[]$ \OT1/cmr/m/n/10 and $\OML/cmm/m/it/10 B[]$ \OT1/cmr/m/n/10 of $\OT1/cmr/bx/n/10 w \OT1/cmr/m/n/10 = (1\OML/cmm/m/it/10 ;  \OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ;  \OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ;  \OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ;  \OT1/cmr/m/n/10 1)$. 
+ []
+
+[100]
+Overfull \hbox (6.74693pt too wide) in paragraph at lines 1542--1542
+[]  \OT1/cmtt/m/n/10 % Find the coordinate vector of U(:, j) in B1 with respect to B2.[] 
+ []
+
+
+Overfull \hbox (6.74693pt too wide) in paragraph at lines 1542--1542
+[]  \OT1/cmtt/m/n/10 % Find the coordinate vector of V(:, j) in B2 with respect to B1.[] 
+ []
+
+
+Overfull \hbox (22.4968pt too wide) in paragraph at lines 1542--1542
+[]\OT1/cmtt/m/n/10 disp('The coordinate matrix of w with respect to B1 is'); disp(w_B1');[] 
+ []
+
+
+Overfull \hbox (22.4968pt too wide) in paragraph at lines 1542--1542
+[]\OT1/cmtt/m/n/10 disp('The coordinate matrix of w with respect to B2 is'); disp(w_B2');[] 
+ []
+
+
+Underfull \vbox (badness 6396) has occurred while \output is active []
+
+ [101]) (./section8.tex [102]
+Chapter 8.
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 16.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 16.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 19.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 19.
+
+
+Overfull \hbox (42.24687pt too wide) in paragraph at lines 50--50
+ []\OT1/cmtt/m/n/10 % Find the matrix representation with respect to the bases B1 and B2.[] 
+ []
+
+[103
+
+]
+Overfull \hbox (89.49646pt too wide) in paragraph at lines 50--50
+ []\OT1/cmtt/m/n/10 disp('The matrix representation of T with respect to the basis B1 and B2 is');[] 
+ []
+
+
+Overfull \hbox (42.24687pt too wide) in paragraph at lines 61--61
+ []\OT1/cmtt/m/n/10 The matrix representation of T with respect to the basis B1 and B2 is[] 
+ []
+
+
+Overfull \hbox (10.74715pt too wide) in paragraph at lines 77--77
+ []\OT1/cmtt/m/n/10 % Find the coordinate vector of x with respect to the basis B1.[] 
+ []
+
+
+Overfull \hbox (26.49701pt too wide) in paragraph at lines 77--77
+ []\OT1/cmtt/m/n/10 disp('The coordinate vector of x with respect to the basis B is');[] 
+ []
+
+
+Overfull \hbox (26.49701pt too wide) in paragraph at lines 77--77
+ []\OT1/cmtt/m/n/10 % Find the coordinate vector of T(x) with respect to the basis B2.[] 
+ []
+
+
+Overfull \hbox (52.74678pt too wide) in paragraph at lines 77--77
+ []\OT1/cmtt/m/n/10 disp('The coordinate vector of T(x) with respect to the basis B'' is');[] 
+ []
+
+
+Overfull \hbox (0.24724pt too wide) in paragraph at lines 89--89
+ []\OT1/cmtt/m/n/10 The coordinate vector of T(x) with respect to the basis B' is[] 
+ []
+
+[104] [105]
+Overfull \hbox (10.74715pt too wide) in paragraph at lines 193--193
+ []    \OT1/cmtt/m/n/10 fprintf('The eigenvalue lambda is '); disp(eigenvalues(j));[] 
+ []
+
+
+Overfull \hbox (15.9971pt too wide) in paragraph at lines 193--193
+ []    \OT1/cmtt/m/n/10 fprintf('The nullity of (lambda*I - A) is '); disp(nullity);[] 
+ []
+
+
+Overfull \hbox (89.49646pt too wide) in paragraph at lines 234--234
+ []\OT1/cmtt/m/n/10 % find two linearly independent eigenvectors of A corresponding to lambda = 2.[] 
+ []
+
+
+Overfull \hbox (0.24724pt too wide) in paragraph at lines 234--234
+ []\OT1/cmtt/m/n/10 p1 = eigvec12(:, 1); p2 = eigvec12(:, 2); p3 = eigvec3(:, 1);[] 
+ []
+
+
+Overfull \hbox (10.74715pt too wide) in paragraph at lines 234--234
+ []\OT1/cmtt/m/n/10 % By the Theorem 8.2.7, since the eigenvectors corresponding to[] 
+ []
+
+
+Overfull \hbox (47.49683pt too wide) in paragraph at lines 234--234
+ []\OT1/cmtt/m/n/10 % the three obtained eigenvectors {p1, p2, p3} form a basis for R^{3}.[] 
+ []
+
+
+Overfull \hbox (89.49646pt too wide) in paragraph at lines 234--234
+ []\OT1/cmtt/m/n/10 disp('A basis {p1, p2, p3} for R^{3} consisting of the eigenvectors of A is');[] 
+ []
+
+
+Overfull \hbox (42.24687pt too wide) in paragraph at lines 245--245
+ []\OT1/cmtt/m/n/10 A basis {p1, p2, p3} for R^{3} consisting of the eigenvectors of A is[] 
+ []
+
+[106]
+Overfull \hbox (11.01476pt too wide) has occurred while \output is active
+\OT1/cmr/m/sl/10 8.3.  ORTHOGONAL DIAGONALIZABILITY; FUNCTIONS OF A MATRIX \OT1/cmr/m/n/10 107
+ []
+
+[107]
+Overfull \hbox (15.9971pt too wide) in paragraph at lines 366--366
+ []\OT1/cmtt/m/n/10 disp('Coefficients of the matrix characteristic polynomial is');[] 
+ []
+
+[108]
+Overfull \hbox (11.01476pt too wide) has occurred while \output is active
+\OT1/cmr/m/sl/10 8.3.  ORTHOGONAL DIAGONALIZABILITY; FUNCTIONS OF A MATRIX \OT1/cmr/m/n/10 109
+ []
+
+[109] [110]
+Overfull \hbox (31.74696pt too wide) in paragraph at lines 510--510
+ []\OT1/cmtt/m/n/10 eigen value of A is    66/682507   101/14989   262/1549   3500/2333[] 
+ []
+
+
+Overfull \hbox (31.74696pt too wide) in paragraph at lines 549--549
+ []    \OT1/cmtt/m/n/10 % Place the reciprocal of the multiplier in that position in U.[] 
+ []
+
+
+Overfull \hbox (36.99692pt too wide) in paragraph at lines 549--549
+ []            \OT1/cmtt/m/n/10 % Add minus (j,k)-entry times the ith row to the jth row[] 
+ []
+
+[111]
+Overfull \hbox (63.24669pt too wide) in paragraph at lines 549--549
+ []            \OT1/cmtt/m/n/10 % Place the negative of the multiplier in that position in U.[] 
+ []
+
+
+Overfull \hbox (57.99673pt too wide) in paragraph at lines 568--568
+ []\OT1/cmtt/m/n/10 % From an LU-factorization of A, we can find the LDU-factorization of A,[] 
+ []
+
+
+Overfull \hbox (36.99692pt too wide) in paragraph at lines 568--568
+ []\OT1/cmtt/m/n/10 disp('L = '); disp(L); disp('D = '); disp(D); disp('U = '); disp(U);[] 
+ []
+
+
+Overfull \hbox (26.49701pt too wide) in paragraph at lines 602--602
+ []\OT1/cmtt/m/n/10 disp('The Cholesky factor R1 from the LDU-factorization of A is');[] 
+ []
+
+[112]
+Overfull \hbox (21.24706pt too wide) in paragraph at lines 622--622
+ []\OT1/cmtt/m/n/10 % Find a Cholesky factorization of A by using the MATLAB command.[] 
+ []
+
+
+Overfull \hbox (10.74715pt too wide) in paragraph at lines 622--622
+ []\OT1/cmtt/m/n/10 disp('The Cholesky factor R2 from the MATLAB command chol is');[] 
+ []
+
+) [113] (./main.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 2968 strings out of 481239
+ 40953 string characters out of 5920377
+ 276891 words of memory out of 5000000
+ 18159 multiletter control sequences out of 15000+600000
+ 545614 words of font info for 75 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 38i,14n,31p,1407b,553s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on main.pdf (113 pages, 628940 bytes).
+PDF statistics:
+ 569 PDF objects out of 1000 (max. 8388607)
+ 393 compressed objects within 4 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 91 words of extra memory for PDF output out of 10000 (max. 10000000)
+
