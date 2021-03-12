@@ -24,3 +24,13 @@ Assignment | 1
 Doc | [Link]({{site.baseurl}}/week2/assign1)
 Score | 0
 Submission | False
+
+이 과제는 매트랩을 처음 접하는 사람들에게 도움이 될 몇가지 기본적인 내용들을 담고 있습니다. 매트랩을 아직 설치하지 않았거나, 한번도 열어보지 않았다면 먼저 Intro와 Week1의 내용을 읽어보길 권장합니다.
+
+이 번 과제는 아무것도 제출할 필요가 없습니다. 내용을 읽어보고, 매트랩을 실행해서 스스로 따라해보는게 과제입니다.
+
+---
+
+This assignment contains some basic information that will be helpful to those who are new to MATLAB. If you haven’t installed MATLAB yet, or even haven’t opened it, it is recommended to read the contents of Intro and Week1.
+
+You do not need to submit anything for this assignment. The requirement is to run MATLAB and follow along on your own by reading the contents.
