@@ -24,7 +24,7 @@ Assignment | 2
 Doc | [Link]({{site.baseurl}}/week3/assign2)
 Files | [Download](<https://klms.kaist.ac.kr/mod/assign/view.php?id=519200>)
 Score | 13
-Due date | Mar 25, 11:59 PM
+Due date | Apr 01, 11:59 PM
 Submission format | MATLAB figure file (*.fig)
 Where to submit | [KLMS assignment 2](<https://klms.kaist.ac.kr/mod/assign/view.php?id=519200>)
 
