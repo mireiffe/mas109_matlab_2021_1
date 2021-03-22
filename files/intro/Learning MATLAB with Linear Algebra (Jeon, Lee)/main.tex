@@ -1,0 +1,73 @@
+% 2017/01/01 Software textbook - MATLAB
+
+\documentclass
+%[draft]{book}
+{book}
+\usepackage{amsmath, amssymb, float, subfigure, epsfig}
+\usepackage{amsthm}
+\usepackage{graphicx}
+%\usepackage{hangul}
+\usepackage{color}
+
+
+%=========================================================
+\newcommand{\defh}{\hspace{1mm}$\hat{}$\hspace{1mm}}
+\newcommand{\defhh}{\hspace{.3mm} \hat{} \hspace{.3mm}}
+\newcommand{\vs}{\par \vspace{.3in}}
+\newcommand{\vv}{\par \vspace{.1in}}
+\newcommand{\hh}{\hspace{.1in}}
+\newcommand{\vn}{\vv\noindent}
+\newcommand{\nnline}{\vn}
+\newcommand{\maplep}{\vv [ \ $>$\ }
+\newcommand{\matlabp}{\vv $\gg$\ }
+\newcommand{\doublespace}{\addtolength{\baselineskip}{.13\baselineskip}}
+
+%\newtheorem{example}{Example}
+\newtheorem{example}{예제}
+\newtheorem{problem}{Problem}
+\newtheorem{Theorem}{Theorem}{}
+\newenvironment{Proof}{\par {\noindent \it Proof.}}{}
+%=========================================================
+
+%=========================================================
+\floatstyle{ruled}
+\newfloat{alg}{tnp}{lop}[chapter]
+\floatname{alg}{ALGORITHM}
+%=========================================================
+
+\begin{document}
+
+\frontmatter
+
+\title{\bf{Learning MATLAB with Linear Algebra}}
+
+\author{Soomin Jeon and Chang-Ock Lee\\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\
+ Department of Mathematical Sciences\\KAIST}
+\date{2017}
+
+\mainmatter
+\maketitle
+
+
+
+\theoremstyle{remark}
+\newtheorem*{sol}{\bf\textit{Solution{}}}{}
+\newtheorem*{outputs}{\bf\textit{MATLAB results}}
+\newtheorem{prob}{\bf{Problem}}
+\newtheorem{exer}{\bf{Exercise}}
+\numberwithin{exer}{chapter} % important bit
+
+
+\graphicspath{{./fig-matlab/}}
+
+\tableofcontents
+\input{Matlabe.tex}
+%\input{section1.tex}
+\input{section2.tex}
+\input{section3.tex}
+\input{section4.tex}
+\input{section5.tex}
+\input{section6.tex}
+\input{section7.tex}
+\input{section8.tex}
+\end{document}

@@ -1,0 +1,312 @@
+% section6
+\chapter{Linear Transformations}
+
+\section{Matrices as Transformations}
+
+\begin{exer} (\textit{Linear Transformation: Rotation})\\
+Make a function file with a function name \textit{reflect\_pt} to find the reflection of the point $(a,b)$ about the line through the origin of the $xy$-plane that makes an angle of $\theta\,^{\circ}$ with the positive $x$-axis. Make $a$, $b$, and $\theta$ the inputs to the function and the reflection point $(x,y)$ the output. Using this function, find the result of this function for $(a,b)=(1,3)$ and $\theta=12$ by the following commands:
+
+\vspace{2mm}
+
+\begin{verbatim}
+>> [x, y]=reflect_pt(1, 3, 12)
+\end{verbatim}
+
+\end{exer}
+
+
+
+\begin{sol}
+\begin{verbatim}
+
+%--- The following is the function file 'reflect_pt.m'. ---%
+function [x, y]=reflect_pt(a, b, ang)
+  theta=ang*(pi/180);
+  T = [cos(2*theta) sin(2*theta); sin(2*theta) -cos(2*theta)];
+    
+  result=T*[a b]';
+  x=result(1); y=result(2);
+end
+\end{verbatim}
+
+\begin{outputs}
+
+\begin{verbatim}
+
+x =
+    2.1338
+    
+y =
+   -2.3339
+\end{verbatim}
+\end{outputs}
+\end{sol}
+
+\vspace{3mm}
+
+\begin{exer} (\textit{Linear Transformation: Projection})\\ 
+Consider successive rotations of $\mathbb{R}^{3}$ by an angle $\theta_{1}$ degree about the $x$-axis, then by an angle $\theta_{2}$ degree about the $y$-axis, and then by an angle $\theta_{3}$ degree about the $z$-axis. Make a function file named \textit{comp\_Rot} to find an appropriate axis and angle of rotation that achieves the same result in one rotation. Make $\theta_{1}, \theta_{2},$ and $\theta_{3}$ degrees the inputs to the function and the axis and angle of rotation the outputs. Give the output axis as a unit vector. You may make the standard matrix for the composition of the rotations by multiplication of the standard matrices for the rotations about the position $x$-, $y$-, and $z$-axes, respectively. Using the function \textit{comp\_Rot}, check the result of the following commands:
+
+\vspace{2mm}
+
+\begin{verbatim}
+>> [L ang]=comp_Rot(45, 45, 45)
+\end{verbatim}
+
+\end{exer}
+
+
+\begin{sol}
+
+\begin{verbatim}
+
+%--- The following is the function file 'comp_Rot.m'. ---%
+function [L, ang] = comp_Rot(ang1, ang2, ang3)
+
+  % Angle as a degree.
+  angle=[ang1 ang2 ang3];
+
+  % Convert angles from degrees to radians.
+  theta=angle*(pi/180); 
+
+  % Rotation about x-axis, y-axis, and z-axis.
+  Rx = [1 0 0; 
+        0 cos(theta(1)) -sin(theta(1)); 
+        0 sin(theta(1)) cos(theta(1))];
+  Ry = [cos(theta(2)) 0 sin(theta(2)); 
+        0 1 0; 
+        -sin(theta(2)) 0 cos(theta(2))];
+  Rz = [cos(theta(3)) -sin(theta(3)) 0; 
+        sin(theta(3)) cos(theta(3)) 0; 
+        0 0 1];
+
+  % Composition of the three rotation matrices R = Ry*Rx*Rz.
+  R = Rz*Ry*Rx; 
+
+  % Find the axis of rotation of R,
+  % by finding the eigenvector of R 
+  % corresponding to the eigenvalue lambda=1.
+
+  % Find a nonzero vector satisfying Rx = x.
+  L = null(eye(3) - R);
+
+  % Make the axis of rotation unit vector. 
+  L = L/norm(L);  
+
+  % Find the angle of rotation of R.
+  % Note that w=(-x2,x1,0) is 
+  % orthogonal to the axis of rotation x=(x1,x2,x3).
+  w = [-L(2) L(1) 0]';
+  rot_theta = acos((dot(w, R*w))/((norm(w)*norm(R*w))));
+  ang = ((rot_theta)*(180/pi));
+end
+\end{verbatim}
+
+
+\begin{outputs}
+
+\begin{verbatim}
+
+L =
+   -0.3574
+   -0.8629
+   -0.3574
+
+ang =
+   64.7368
+\end{verbatim}
+\end{outputs}
+
+\end{sol}
+\newpage
+
+\section{Geometry of Linear Operators}
+
+\begin{exer} (\textit{Rotation as an Orthogonal Transformation})\\
+Let
+\begin{displaymath}
+A = \left[\begin{array}{rrrr} \displaystyle -\frac{3}{7}&\quad \displaystyle -\frac{2}{7}&\quad \displaystyle -\frac{6}{7} \vspace{3mm} \\ \vspace{3mm} \displaystyle \frac{6}{7} & \displaystyle -\frac{3}{7} & \displaystyle -\frac{2}{7}\\ \displaystyle -\frac{2}{7} & \displaystyle -\frac{6}{7} & \displaystyle \frac{3}{7} \end{array} \right].
+\end{displaymath}
+
+\vspace{2mm}
+\noindent Show that $A$ represents a rotation, and use Formulas $(16)$ and $(17)$ in Section $6.2$ to find the axis and angle of rotation.
+\end{exer}
+
+\begin{sol}
+\begin{verbatim}
+
+A = [-3/7 -2/7 -6/7; 6/7 -3/7 -2/7; -2/7 -6/7 3/7]; format short;
+
+% Check that A*A' is the identity matrix.
+A*A' 
+
+% Although the off diagonal entries are not exactly all zeros,
+% the scaling factor suggests that roundoff error prevents
+% the computed matrix from being the identity matrix.
+% You can see that the product is exactly the identity matrix,
+% when the symbolic computation is used.
+
+% Check that det(A)=1 to conclude that A is orthogonal.
+det(A) 
+
+% Since A*A'=I and det(A) = 1, A represents a rotation.
+
+% By (16) of Section 6.2,
+% find the angle of rotation 
+% and convert the angle from radians to degrees.
+theta = acos((trace(A)-1)/2); ang = ((theta)*(180/pi));
+disp('The angle of rotation in degrees is'); disp(ang);
+
+% By (17) of Section 6.2, find the axis of rotation.
+% The initial point at the origin.
+e1 = [1 0 0]'; 
+
+% v is along the axis of rotation.
+v = (A+A'+((1-trace(A))*eye(3))) * e1; 
+disp('The axis of rotation passes through the point'); disp(v');
+\end{verbatim}
+
+
+\begin{outputs}
+
+\begin{verbatim}
+
+The angle of rotation in degrees is
+  135.5847
+The axis of rotation passes through the point
+    0.5714    0.5714   -1.1429
+\end{verbatim}
+\end{outputs}
+\end{sol}
+
+
+
+\section{Kernel and Range}
+
+
+\begin{exer}
+(\textit{Invertible Matrix as a Bijective Linear Transformation})\\
+Consider the matrix
+\begin{displaymath}
+A = \left[\begin{array}{rrrr} 3& \hspace{1mm} -5& \hspace{1mm} -2&\hspace{3mm} 2\\ -4 & 7 & 4 & 4 \\ 4 & -9 & -3 & 7 \\ 2 & -6 & -3 & 2 \end{array} \right].
+\end{displaymath}
+
+\vspace{2mm}
+Referring to the Theorem $6.3.15$ in Section $6.3$, show that $T_{A} : \mathbb{R}^{4} \rightarrow \mathbb{R}^{4}$ is onto in at least four different ways. You may use several related MATLAB commands.
+
+\end{exer}
+
+
+\begin{sol}
+\begin{verbatim}
+
+A = [3 -5 -2 2; -4 7 4 4; 4 -9 -3 7; 2 -6 -3 2];
+format short;
+
+% By (a) in Theorem 6.3.15, use the command rref of A.
+rref(A)
+
+% Since the reduced row echelon form of A is the identity matrix,
+% the linear transformation T is onto.
+
+% By (d) in Theorem 6.3.15, use the command null of A.
+
+% Find a basis for the null space of A.
+null(A, 'r') 
+
+% Since the null space contains only the zero vector,
+% the linear transformation T is onto.
+
+% By (g) in Theorem 6.3.15, use the command rank of A.
+
+% Find the number of linearly independent columns of A.
+rank(A) 
+
+% Since the column vectors of A are linearly independent,
+% the linear transformation T is onto.
+
+% By (i) in Theorem 6.3.15, use the command det of A.
+
+% Find the determinant of A.
+det(A) 
+
+% Since det(A) is nonzero,
+% the linear transformation T is onto.
+
+% By (j) in Theorem 6.3.15, use the command eig of A.
+
+% Find the eigenvalues A.
+eig(A) 
+
+% Since 0 is not an eigenvalue of A,
+% the linear transformation T is onto.
+\end{verbatim}
+\end{sol}
+
+
+
+\section{Composition and Invertibility of Linear Transformations}
+
+
+
+\begin{exer}(\textit{Compositions of Linear Transformations})\\
+Consider successive rotations of $\mathbb{R}^{3}$ by $30\,^{\circ}$ about the $z$-axis, then by $60\,^{\circ}$ about the $x$-axis, and then by $45\,^{\circ}$ about the $y$-axis. If it is desired to execute the three rotations by a single rotation about an appropriate axis, what axis and angle should be used?
+
+\end{exer}
+
+
+\begin{sol}
+\begin{verbatim}
+
+% Angle as a degree.
+ang1=30; ang2=60; ang3=45; 
+
+% Convert angles from degrees to radians.
+theta1=((ang1)*(pi/180)); 
+theta2=((ang2)*(pi/180));
+theta3=((ang3)*(pi/180)); 
+
+format short;
+
+% Rotation about z-axis with the angle 30.
+Rz = [cos(theta1) -sin(theta1) 0; sin(theta1) cos(theta1) 0; 0 0 1];
+% Rotation about x-axis with the angle 60.
+Rx = [1 0 0; 0 cos(theta2) -sin(theta2); 0 sin(theta2) cos(theta2)];
+% Rotation about y-axis with the angle 45.
+Ry = [cos(theta3) 0 sin(theta3); 0 1 0; -sin(theta3) 0 cos(theta3)];
+
+% Composition of the three rotation matrices R = Ry*Rx*Rz.
+R = Ry*Rx*Rz; 
+
+% Find the axis of rotation of R,
+% by finding the eigenvector of R corresponding to the eigenvalue lambda=1.
+
+% Find a nonzero vector satisfying Rx = x.
+x = null(eye(3) - R); 
+
+% Find the angle of rotation of R.
+% Note that w=(-x2,x1,0) is orthogonal to the axis of rotation x=(x1,x2,x3).
+w = [-x(2) x(1) 0]';
+theta = acos((dot(w, R*w))/((norm(w)*norm(R*w))));
+
+% Convert the angle from radians to degrees.
+ang = ((theta)*(180/pi));
+
+disp('The angle of rotation in degrees is'); disp(ang);
+disp('The axis of rotation is'); disp(x');
+\end{verbatim}
+
+
+\begin{outputs}
+
+\begin{verbatim}
+
+The angle of rotation in degrees is
+   69.3559
+
+The axis of rotation is
+   -0.9350   -0.3525   -0.0391
+\end{verbatim}
+
+\end{outputs}
+\end{sol}
