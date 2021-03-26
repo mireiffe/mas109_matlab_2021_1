@@ -27,4 +27,4 @@ toc_label: "Table of Contents"
 
 From now on, we will deal with loops and conditional statements, which are the most basic of programming. In this assignment, we will look around `for` and `while` loops, and some examples and exercises.
 
-[GO!]({{site.baseurl}}/week4/assign3)
+[GO!]({{site.baseurl}}/week4/assign3/#assignment-3)
