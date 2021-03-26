@@ -1,5 +1,5 @@
 ---
-date: 2021-03-02
+date: 2021-03-02T00:00:00Z
 title: "MATLAB 연습 / MATLAB Tutorial"
 categories: Intro
 tags: intro tutorial

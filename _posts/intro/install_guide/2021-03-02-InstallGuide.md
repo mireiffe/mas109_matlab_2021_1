@@ -1,5 +1,5 @@
 ---
-date: 2021-03-02
+date: 2021-03-02T00:00:03Z
 title: 설치 가이드 (한글)
 categories: Intro
 tags: intro install_guide

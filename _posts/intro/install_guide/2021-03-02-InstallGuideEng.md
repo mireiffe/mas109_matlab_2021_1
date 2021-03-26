@@ -1,5 +1,5 @@
 ---
-date: 2021-03-02
+date: 2021-03-02T00:00:02Z
 title: Installation Guide (English)
 categories: Intro
 tags: intro install_guide
