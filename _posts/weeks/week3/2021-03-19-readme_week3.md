@@ -3,7 +3,7 @@ title: README
 
 date: 2021-03-19T01:00:01Z
 categories: Week3
-tags: week3 readme
+tags: readme
 
 # 목차
 toc: true  
