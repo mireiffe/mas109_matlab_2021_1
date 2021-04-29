@@ -22,7 +22,7 @@ toc_label: "Table of Contents"
 ## 과제 5 연습문제
 첨부된 파일들을 다운받으세요. 총 두개의 파일들, `MAS109_assign5.p`와 `cameraman.png`, 이 있습니다. 카메라맨 이미지를 매트랩에 불러오세요. `MAS109_assign5`함수를, 본인의 학번을 입력값으로 실행한 후, 나타나는 정보를 확인하세요. 
 
-1. 본인의 'Submatrix'항목에 나타난 'Rows'와 'Columns'를  참고하여, 카메라맨 이미지에서 해당하는 부분(부분행렬)만 figure 창에 표시하세요. `imshow`명령어 또는 `imagesc`명령어를 사용해야 할 수 있습니다. 생성한 figure 창을 `ex1_<studentID>.fig`로 저장하세요.\
+1. 본인의 'Submatrix'항목에 나타난 'Rows'와 'Columns'를  참고하여, 카메라맨 이미지에서 해당하는 부분(부분행렬)만 figure 창에 표시하세요. `imshow`명령어 또는 `imagesc`명령어를 사용해야 할 수 있습니다. 생성한 figure 창을 `ex1_<studentID>.fig`로 저장하세요.
 
 2. 본인의 'Delete pixel values'항목에 나타난 두개의 값을 각각 $$v_1$$ 와 $$v_2$$라고 하겠습니다. 카메라맨 이미지의 픽셀 값들 중
 
@@ -57,6 +57,7 @@ cman = imread("cameraman.png"); % make sure the png file is in the `current fold
     ex1 = cman(82:242, 63:222);     % extract an appropriate submatrix `ex1`.
     figure;
     imshow(ex1);
+    savefig('ex1_20219999.fig');
     ```
     *MATLAB result.*
     {:refdef: style="text-align: center;"}
@@ -73,6 +74,7 @@ cman = imread("cameraman.png"); % make sure the png file is in the `current fold
     % show the `ex2` and display pixel in a range [0, 255].
     % If you do not assign the range, then MATLAB displays normalized image, automatically.
     imshow(ex2, [0, 255]);
+    savefig('ex2_20219999.fig');
     ```
     *MATLAB result.*
     {:refdef: style="text-align: center;"}
