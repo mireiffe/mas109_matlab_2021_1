@@ -15,7 +15,7 @@ toc_label: "Table of Contents"
 
 ## 연습문제 || Exercises
 
-범위 / Coverage : [7.1 - 7.3]({{site.baseurl}}/week9/ex7)
+범위 / Coverage : [6.3 - 7.3]({{site.baseurl}}/week9/ex7)
 
 ## 과제 5 해답 || Assignment 5 solution
 
