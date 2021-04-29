@@ -129,6 +129,7 @@ cman = imread("cameraman.png"); % make sure the png file is in the `current fold
     ex1 = cman(82:242, 63:222);     % extract an appropriate submatrix `ex1`.
     figure;
     imshow(ex1);
+    savefig('ex1_20219999.fig');
     ```
     *MATLAB result.*
     {:refdef: style="text-align: center;"}
@@ -145,6 +146,7 @@ cman = imread("cameraman.png"); % make sure the png file is in the `current fold
     % show the `ex2` and display pixel in a range [0, 255].
     % If you do not assign the range, then MATLAB displays normalized image, automatically.
     imshow(ex2, [0, 255]);
+    savefig('ex2_20219999.fig');
     ```
     *MATLAB result.*
     {:refdef: style="text-align: center;"}
