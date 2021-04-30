@@ -67,9 +67,9 @@ cman = imread("cameraman.png"); % make sure the png file is in the `current fold
 2. 앞에서 얻은 $$v_1$$ 와 $$v_2$$ 는 각각 $$116$$, $$179$$ 입니다.
 
     ```matlab
-    % Keep only the pixels whose values are in the range we got.
+    % Make the pixel values zero, whose values are in the range we got.
     % There are many ways to achieve the same task, try to find it yourself.
-    ex2 = double(cman) .* (cman > 116) .* (cman < 179);
+    ex2 = double(cman) .* (1 - (cman > 116) .* (cman < 179));
     figure;
     % show the `ex2` and display pixel in a range [0, 255].
     % If you do not assign the range, then MATLAB displays normalized image, automatically.
@@ -139,9 +139,9 @@ cman = imread("cameraman.png"); % make sure the png file is in the `current fold
 2. $$v_1$$ and $$v_2$$ are $$116$$ and $$179$$, respectively.
 
     ```matlab
-    % Keep only the pixels whose values are in the range we got.
+    % Make the pixel values zero, whose values are in the range we got.
     % There are many ways to achieve the same task, try to find it yourself.
-    ex2 = double(cman) .* (cman > 116) .* (cman < 179);
+    ex2 = double(cman) .* (1 - (cman > 116) .* (cman < 179));
     figure;
     % show the `ex2` and display pixel in a range [0, 255].
     % If you do not assign the range, then MATLAB displays normalized image, automatically.
