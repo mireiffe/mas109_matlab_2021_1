@@ -1,0 +1,173 @@
+\documentclass[11pt,a4paper]{article}
+%\usepackage{hangul}
+\usepackage{amsfonts,dsfont}
+\usepackage{color,soul}
+\usepackage{tcolorbox}
+\usepackage{amsmath,amssymb,tabularx,graphicx}
+\usepackage{systeme}
+\pagestyle{empty}
+\textheight 217mm
+\textwidth 159mm
+\hoffset = -15mm
+\voffset = -7mm
+
+\begin{document}
+\centerline{\Large\bf MATLAB Midterm}
+\vskip .05 in
+\hrule
+\vskip .1 in
+{\noindent \bf Introduction to Linear Algebra \hfill Spring, 2021}
+\vskip 0.2 in
+
+\begin{enumerate}
+\item[10.] (MATLAB Programming Problem)
+
+\begin{enumerate}
+    \item[(1)] (10 points)
+    
+    \vspace{1mm}
+    
+    The following is contents of a MATLAB script file \verb"operations.m":
+
+    \vspace{3mm}
+
+    \begin{verbatim}
+% Declare two matrices, A and B.
+A = [5, -2, -3; -5, 1, 1; 0, 1, 7];
+B = [3, 1, 2; -1, 1, -2; 1, 1, 4];
+
+%--------- operations ----------
+M1 = A * B;     M2 = A .* B;
+D1 = A / B;     D2 = A ./ B;
+% -------------------------------
+
+% some calculations.
+a = min(M1(:)) * sum(M2(2, :));
+b = sum(D1 > D2, `a');
+
+answer = a + b;         % compute `answer'.
+disp(answer)            % print the `answer' on `Command Window'.
+    \end{verbatim}
+
+    Choose the number printed when running this script file, \verb"operations.m".
+    \begin{align*}
+        \mbox{(a)}~-120 && \mbox{(b)}~-55 && \mbox{(c)}~5 && \mbox{(d)}~125 && \mbox{(e)}~536
+    \end{align*}
+
+    \vspace{3mm}
+
+    \item[(2)] (10 potins in total, 2 points for each of blank.)
+    
+    \vspace{1mm}
+    
+    Let $g(x,\, y)$ be a function obtained by rotating the function $f(x,\, y) = e^{-x^2 -y}\sin{2x^4} + 3\cos{xy}$ 
+    counterclockwise 17 degrees about the $z$-axis. In this problem, we write a script file {\verb"rotFunc.m"} 
+    to find and draw the surface represented by the function $g(x,\, y)$ on a domain
+    $D = \left\{(x,\,y)|-1\le x \le 1,\, -1\le y \le 1\right\}$ 
+    with increments of $0.01$ for $x$ and $0.05$ for $y$. Fill in the blanks (1) - (5).
+
+    \vspace{2mm}
+
+    \begin{verbatim}
+% ---------- The following is the script file `rotFunc.m'.----------
+hx = 0.01;   hy = 0.05; % Set the increment as described in the problem.
+
+x = -1:___(1)___:1;     % A vector x of specified interval and increment.
+y = -1:hy:1;            % A vector y of specified interval and increment.
+
+% Construct a grid over the domain D in the problem.
+[X, Y] = ___(2)___(x, y);
+
+theta = ___(3)___;      % Set the theta as an appropriate radian value.
+C = cos(theta);         % Store the value of cos(theta)
+S = sin(theta);         % Store the value of sin(theta)
+
+% Construct clockwise rotated grids, rotX and rotY.
+rotX = C.*X - ___(4)___.*Y;
+rotY = ___(4)___.*X + C.*Y;
+
+% Evaluate the function g(x,y) discribed in the problem.
+gxy = exp(-rotX.^2-rotY).*sin(2*rotX.^4) + 3*cos(rotX.*rotY); 
+
+figure(1);              % Open the figure 1.
+___(5)___(X, Y, gxy);   % Draw the surface.
+grid on;                % Turn the grid on.
+    \end{verbatim}
+
+    \begin{itemize}
+        \item[(a)]
+            (1) \verb"hx", (2) \verb"meshgrid", (3) \verb"-17 * pi / 180", (4) \verb"-S", (5) \verb"surf"
+        \item[(b)]
+            (1) \verb"hx", (2) \verb"meshgrid", (3) \verb"17 * pi / 180", (4) \verb"S", (5) \verb"mesh"
+        \item[(c)]
+            (1) \verb"hx", (2) \verb"meshgrid", (3) \verb"-17 * pi / 180", (4) \verb"S", (5) \verb"plot3"
+        \item[(d)]
+            (1) \verb"hy", (2) \verb"grid on", (3) \verb"-17 * pi / 180", (4) \verb"-S", (5) \verb"mesh"
+        \item[(e)]
+            (1) \verb"hx", (2) \verb"meshgrid", (3) \verb"17 * pi / 180", (4) \verb"-S", (5) \verb"mesh"
+    \end{itemize}
+
+\end{enumerate}
+
+\end{enumerate}
+
+\newpage
+
+\textit{Solution.}
+\begin{enumerate}
+    \item[(1)] answer : (b) $-55$
+    
+    \vspace{2mm}
+    
+    In the first two lines, matrices $A$ and $B$ are declared:
+    \begin{align*}
+        A =
+        \begin{bmatrix}
+            5 & -2 & -3\\ -5 & 1 & 1\\ 0 & 1 & 7
+        \end{bmatrix}
+        ,\quad
+        B = 
+        \begin{bmatrix}
+            3 & 1 & 2\\ -1 & 1 & -2\\ 1 & 1 & 4
+        \end{bmatrix}.
+    \end{align*}
+    In the MATLAB, dot(\verb".") operators do element-wise operations. Furthermore, \verb"A/B" is the same as \verb"A * inv(B)". Thus in the above operations,
+    \begin{align*}
+        M1 =
+        \begin{bmatrix}
+            14 & 0 & 2\\ -15 & -3 & -8\\ 6 & 8 & 26
+        \end{bmatrix}
+        \quad &\mbox{and}\quad
+        M2 = 
+        \begin{bmatrix}
+            15 & -2 & -6\\ 5 & 1 & -2\\ 0 & 1 & 28
+        \end{bmatrix},\\
+        D1 =
+        \begin{bmatrix}
+            2 & -3/2 & -5/2\\
+            -15/8 & 9/8 & 7/4\\
+            -3/4 & -1/4 & 2
+        \end{bmatrix}
+        \quad &\mbox{and}\quad
+        D2 = 
+        \begin{bmatrix}
+            5/3 & -2 & -3/2\\
+            5 & 1 & -1/2\\
+            0 & 1 & 7/4
+        \end{bmatrix}.
+    \end{align*}
+
+    Then, variables $a=-60$ and $b=5$ are easily calculated. Therefore, $a + b = -55$ will be printed.
+
+    \item[(2)] answer : (e)
+    \begin{enumerate}
+        \item[(1)] \verb"hx"
+        \item[(2)] \verb"meshgrid"
+        \item[(3)] \verb"17 * pi / 180"
+        \item[(4)] \verb"-S"
+        \item[(5)] \verb"mesh" \textit{or} \verb"surf"
+    \end{enumerate}
+\end{enumerate}
+
+\end{document}
+

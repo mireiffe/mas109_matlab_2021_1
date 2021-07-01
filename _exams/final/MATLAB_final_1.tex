@@ -1,0 +1,152 @@
+\documentclass[11pt,a4paper]{article}
+%\usepackage{hangul}
+\usepackage{amsfonts,dsfont}
+\usepackage{color,soul}
+\usepackage{tcolorbox}
+\usepackage{amsmath,amssymb,tabularx,graphicx}
+\usepackage{systeme}
+\pagestyle{empty}
+\textheight 217mm
+\textwidth 159mm
+\hoffset = -15mm
+\voffset = -7mm
+
+\begin{document}
+\centerline{\Large\bf MATLAB Final}
+\vskip .05 in
+\hrule
+\vskip .1 in
+{\noindent \bf Introduction to Linear Algebra \hfill Spring, 2021}
+\vskip 0.2 in
+
+\begin{enumerate}
+\item[10.] (MATLAB Programming Problem)
+
+\begin{enumerate}
+    \item[(1)] (10 points, 2 points for each)
+    
+    \vspace{1mm}
+    Let $A$ be a $7 \times 8$ matrix given by
+    \begin{align*}
+        A =
+        \begin{bmatrix}
+            1 &  8 & 0 & 0 & 0 & 0 & 0 & 50\\
+            2 &  9 & 0 & 0 & 0 & 0 & 44 & 51\\
+            3 & 10 & 0 & 0 & 0 & 0 & 45 & 52\\
+            4 & 11 & 0 & 0 & 0 & 0 & 46 & 53\\
+            5 & 12 & 0 & 0 & 0 & 0 & 47 & 54\\
+            6 & 13 & 0 & 0 & 0 & 0 & 48 & 55\\
+            7 & 0 & 0 & 0 & 0 & 0 & 49 & 56\\
+        \end{bmatrix}.
+    \end{align*}
+
+    Choose all the MATLAB codes that generate matrix $A$ as above.
+
+    \vspace{2mm}
+    
+    \begin{itemize}
+        \item[(a)] 
+        \verb"A = reshape(1:56, 7, 8);"\\
+        \verb"A(14 <= A & 43 >= A) = 0;"
+
+        \item[(b)] 
+        \verb"A = reshape(1:56, 7, 8);"\\
+        \verb"A = A .* ((14 > A) + (43 < A));"
+        
+        \item[(c)]
+        \verb"A(1:13) = 1:13;   A(44:56) = 44:56;"\\
+        \verb"A = reshape(A, 7, 8);"
+        
+        \item[(d)] 
+        \verb"A = reshape(1:56, 7, 8);"\\
+        \verb"A = A(14 <= A) .* A(43 >= A);"
+        
+        \item[(e)] 
+        \verb"A = zeros(7, 8);"\\
+        \verb"A(:) = [1:13, zeros(1, 30), 44:56];"
+    \end{itemize}
+
+    \vspace{3mm}
+    \newpage
+
+    \item[(2)] (10 potins)
+    
+    \vspace{1mm}
+    
+    Let $A$ be an $m \times n$ matrix with full column rank. 
+    The following MATLAB function performs a Gram-Schmidt process and produces 
+    an $m \times n$ orthogonal matrix $Q$ whose columns form an orthonormal basis for col$(A)$. 
+    Fill in the blanks (1) - (5).\\
+    (In this problem, assume that the input matrix $A$ is numerically good enough.)
+
+    \vspace{2mm}
+
+    \begin{verbatim}
+% ------- The following is the script file `GramSchmidt.m'. -------
+___(1)___ Q = GramSchmidt(A)
+[m, n] = size(A);
+
+% Initialize the matrix Q as an m*n zero matrix.
+Q = zeros(m, n);
+for i = 1 : n
+    % v starts with a column of A.
+    v = ___(2)___;
+    for j = 1 : i-1
+        % Subtract orthogonal projections of v onto the subspaces
+        % spanned by the previously generated orthonormal vectors.
+        q = ___(3)___;
+        v = v - ___(4)___;
+    end
+    % Normalize v by its Euclidean norm.
+    Q(:, i) = v / ___(5)___;
+end
+    \end{verbatim}
+
+    \begin{itemize}
+        \item[(a)]
+            (1) \verb"def", (2) \verb"A(i, :)", (3) \verb"Q(:, j)", (4) \verb"(q' * A(:, i)) * q", (5) \verb"norm(v)"
+        \item[(b)]
+            (1) \verb"function", (2) \verb"A(:, i)", (3) \verb"Q(:, i)", (4) \verb"(q' * v) * q", (5) \verb"sqrt(sum(v^2))"
+        \item[(c)]
+            (1) \verb"def", (2) \verb"A(:, i)", (3) \verb"Q(:, i)", (4) \verb"(q' * v) * q", (5) \verb"sqrt(sum(v^2))"
+        \item[(d)]
+            (1) \verb"function", (2) \verb"A(:, i)", (3) \verb"Q(:, j)", (4) \verb"(q' * A(:, i)) * q", (5) \verb"norm(v)"
+            \item[(e)]
+            (1) \verb"function", (2) \verb"A(:, i)", (3) \verb"Q(:, j)", (4) \verb"(q' * v) * q", (5) \verb"sqrt(sum(v^2))"
+        \end{itemize}
+        
+    \end{enumerate}
+    
+\end{enumerate}
+
+\newpage
+
+\noindent \textit{Solution.}
+\begin{enumerate}
+    \item[(1)] (a) True, (b) True, (c) True, (d) False, (e) True
+    
+    \vspace{2mm}
+    
+    An explain for (d):\\
+    \verb"A = reshape(1:56, 7, 8);"\\
+    \verb"A = A(14 <= A) .* A(43 >= A);"
+    
+    \vspace{2mm}
+    
+    Here, \verb"A(14 <= A)" and \verb"A(43 >= A)" are just logical statments. 
+    Thus the \verb"A" gernerated in (d) consists of only 0s and 1s. 
+    To achieve the goal, the task of selecting the correct values of \verb"A"
+    using the generated logical variables should be added.
+    
+    \item[(2)] answer : (d)
+    \begin{enumerate}
+        \item[(1)] \verb"function"
+        \item[(2)] \verb"A(:, i)"
+        \item[(3)] \verb"Q(:, j)"
+        \item[(4)] \verb"(q' * A(:, i)) * q"
+        \item[(5)] \verb"norm(v)"
+    \end{enumerate}
+\end{enumerate}
+
+\end{document}
+

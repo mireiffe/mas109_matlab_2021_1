@@ -1,0 +1,112 @@
+% section 2
+\chapter {Systems of Linear Equations}
+
+%\section{Introduction to Systems of Linear Equations}
+%\section{Solving Linear Systems by Row Reduction}
+
+\section{Introduction to Systems of Linear Equatios}
+
+No MATLAB problems in this section.
+
+\section{Solving Linear Ssytems by Row Reduction}
+\begin{exer}
+(\textit{Reduced Row Echelon Form with Pivot Columns and Ranks}) \\
+In MATLAB, there are several useful commands for matrices such as \textit{rref} command which produces the reduced row echelon form together with the pivot columns, and \textit{rank} command which gives the number of the leading $1$'s without finding its row echelon form. Find the reduced row echelon form, the pivot columns, and the rank of the matrix $A$, where
+\vspace{2mm}
+\begin{displaymath}
+A = \left[\begin{array}{rrrrr} 2& \hspace{1mm}-3& \hspace{1mm} 1& \hspace{3mm} 0& \hspace{2mm} 4 \\ 1 & 1 & 2 & 2 & 0 \\ 3 & 0 & -1 & 4 & 5 \\ 1 & 6 & 5 & 6 & -4 \end{array} \right].
+\end{displaymath}
+\end{exer}
+
+\begin{sol}
+
+\begin{verbatim}
+
+% Construct the matrix A.
+A=[2 -3 1 0 4; 1 1 2 2 0; 3 0 -1 4 5; 1 6 5 6 -4]; 
+
+% Display the format of each entry as a rational form
+format rat; 
+
+% Find the reduced row echelon form 
+% and the pivot columns of the matrix A.
+[rref_A pivotcols] = rref(A);
+
+% Find the rank of the matrix A.
+rank_A = rank(A); 
+
+disp('The reduced row echelon form is'); disp(rref_A);
+disp('The pivot columns are'); disp(pivotcols);
+disp('The number of the leading 1 is'); disp(rank_A);
+\end{verbatim}
+
+\begin{outputs}
+
+\begin{verbatim}
+
+The reduced row echelon form is
+       1    0    0   17/13   3/2
+       0    1    0   11/13  -1/2
+       0    0    1   -1/13  -1/2
+       0    0    0      0     0
+
+The pivot columns are
+       1    2    3
+
+The number of leading 1 is
+       3
+\end{verbatim}
+\end{outputs}
+\end{sol}
+
+
+\vspace{5mm}
+\begin{exer}
+(\textit{Linear Combinations}) Use the MATLAB command \textit{rref} to express the vector $\mathbf{b}=(-21, \hspace{1mm}-60, \hspace{1mm}-3, \hspace{1mm}108, \hspace{1mm}84)$ as a linear combination of $\mathbf{v_{1}}$, $\mathbf{v_{2}}$, and $\mathbf{v_{3}}$ where 
+$\mathbf{v_{1}}=(1, \hspace{1mm} -1, \hspace{1mm}3, \hspace{1mm}11, \hspace{1mm}20)$, 
+$\mathbf{v_{2}}=(10, \hspace{1mm}5, \hspace{1mm}15, \hspace{1mm}20, \hspace{1mm}11)$, 
+and 
+$\mathbf{v_{3}}=(3, \hspace{1mm}3, \hspace{1mm}4, \hspace{1mm}4, \hspace{1mm}9)$.
+\end{exer}
+
+\begin{sol}
+\begin{verbatim}
+
+% Construct b as a column vector.
+b = [-21 -60 -3 108 84]';
+% Set v1, v2, v3 as column vectors. 
+v1 = [1 -1 3 11 20]'; 
+v2 = [10 5 15 20 11]'; 
+v3 = [3 3 4 4 9]';
+% Set a matrix A with column vectors v1, v2 and v3. 
+A = [v1 v2 v3]; 
+% Augmented matrix [A | b].
+augA = [A b]; 
+% Reduced row echelon form of augA.
+rref_augA = rref(augA);
+% Solution vector from rref_augA. 
+x = rref_augA(1:3, 4); 
+
+% Display the result as an integer form.
+format rat; 
+disp('b is a linear combination of x(1)*v1+x(2)*v2+x(3)*v3, where');
+disp('x(1) ='); disp(x(1)); disp('x(2) ='); disp(x(2));
+disp('x(3) ='); disp(x(3));
+\end{verbatim}
+
+\begin{outputs}
+
+\begin{verbatim}
+
+b is a linear combination of x(1)*v1+x(2)*v2+x(3)*v3, where
+x(1) =
+      12
+
+x(2) =
+       3
+
+x(3) =
+     -21
+\end{verbatim}
+\end{outputs}
+\end{sol}

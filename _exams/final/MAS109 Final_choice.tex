@@ -1,0 +1,416 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage{comment}
+\usepackage{colonequals}
+\usepackage{amsmath}
+\usepackage{mleftright}
+\usepackage{booktabs}
+%\usepackage{mathtool}
+\makeatletter
+
+\NeedsTeXFormat{LaTeX2e}
+\newif\if@widepage \@widepagetrue
+\newif\if@solin \@solintrue
+\newif\if@english \@englishfalse
+\newif\if@solwithprob \@solwithprobtrue
+
+\DeclareOption{nowidepage}{\@widepagefalse}
+\DeclareOption{widepage}{\@widepagetrue}
+\DeclareOption{solwithprob}{\@solwithprobtrue}
+\DeclareOption{onlysol}{\@solwithprobfalse}
+\DeclareOption{solafter}{\@solinfalse}
+\DeclareOption{solin}{\@solintrue}
+\DeclareOption{english}{\@englishtrue}
+\DeclareOption{hangul}{\@englishfalse} \ProcessOptions
+
+\usepackage{amsmath}
+\usepackage{enumerate}
+
+\newcommand{\highlight}[2]{\begingroup\setlength\fboxsep{1pt}\colorbox{#1}{#2}\endgroup}
+\newcommand{\coloring}[2]{\begingroup\color{#1} #2\endgroup}
+\definecolor{PTColor}{rgb}{0,0,1}%
+\definecolor{CommentColor}{rgb}{1,0,0}%
+\newcommand{\pt}{{\textbf{\coloring{PTColor}{(1 point)}}}}
+\newcommand{\dpt}{{\textbf{\coloring{CommentColor}{($-$1 point)}}}}
+\newcommand{\nPts}[1]{{\textbf{\coloring{PTColor}{(#1 points)}}}}
+\newcommand{\dPts}[1]{{\textbf{\coloring{CommentColor}{($-$#1 points)}}}}
+
+\newcommand{\tuborg}{\left\{\begin{array}{ll}}
+\newcommand{\sluttuborg}{\end{array}\right.}
+
+%\input epsf.sty
+\def\baselinestretch{1.3}
+
+\if@widepage \input{a4wide.sty}\fi
+\newlength{\Problen}
+\newlength{\Probheadlen}
+\newlength{\Probskip}
+
+\Probheadlen 16mm \Probskip 3mm \Problen\textwidth
+\addtolength\Problen{-\Probheadlen} \addtolength\Problen{-\Probskip}
+
+%%% \newcounter{Prob} %%%%%%%
+\newsavebox{\@syntest}
+\newbox\@lastproblem
+
+\if@english
+    \newenvironment{Prob}[2][]{ %
+    \global\setbox\@lastproblem=\vbox\bgroup
+    \par\noindent\parbox[t]{\Probheadlen}{\raggedleft\fontsize{10}{10pt}\selectfont
+    {\bfseries\large #2 }\\[-1.5mm]
+    \rule[1mm]{\Probheadlen}{.2mm}\\[-2mm]{\sffamily #1}}\hspace\Probskip%
+    \begin{minipage}[t]{\Problen}}{\end{minipage}\par\vspace{3mm}\egroup%
+    \unvcopy\@lastproblem}
+    \newenvironment{ProbK}{\begin{lrbox}{\@syntest}%
+    \begin{minipage}\textwidth}{\end{minipage}\end{lrbox}}
+\else
+    \newenvironment{ProbK}[2][]{ %
+    \global\setbox\@lastproblem=\vbox\bgroup
+    \par\noindent\parbox[t]{\Probheadlen}{\raggedleft\fontsize{10}{10pt}\selectfont
+    {\bfseries\large #2 }\\[-1.5mm]
+    \rule[1mm]{16mm}{.2mm}\\[-2mm]{\sffamily #1}}\hspace{\Probskip}%
+    \begin{minipage}[t]{\Problen}}{\end{minipage}\par\vspace{3mm}\egroup%
+    \unvcopy\@lastproblem}
+    \newenvironment{Prob}{\begin{lrbox}{\@syntest}%
+    \begin{minipage}\textwidth}{\end{minipage}\end{lrbox}}
+\fi
+
+
+\def\lhead{\@ifnextchar[{\@xlhead}{\@ylhead}}
+\def\@xlhead[#1]#2{\gdef\@elhead{#1}\gdef\@olhead{#2}}
+\def\@ylhead#1{\gdef\@elhead{#1}\gdef\@olhead{#1}}
+
+\def\chead{\@ifnextchar[{\@xchead}{\@ychead}}
+\def\@xchead[#1]#2{\gdef\@echead{#1}\gdef\@ochead{#2}}
+\def\@ychead#1{\gdef\@echead{#1}\gdef\@ochead{#1}}
+
+\def\rhead{\@ifnextchar[{\@xrhead}{\@yrhead}}
+\def\@xrhead[#1]#2{\gdef\@erhead{#1}\gdef\@orhead{#2}}
+\def\@yrhead#1{\gdef\@erhead{#1}\gdef\@orhead{#1}}
+
+\def\lfoot{\@ifnextchar[{\@xlfoot}{\@ylfoot}}
+\def\@xlfoot[#1]#2{\gdef\@elfoot{#1}\gdef\@olfoot{#2}}
+\def\@ylfoot#1{\gdef\@elfoot{#1}\gdef\@olfoot{#1}}
+
+\def\cfoot{\@ifnextchar[{\@xcfoot}{\@ycfoot}}
+\def\@xcfoot[#1]#2{\gdef\@ecfoot{#1}\gdef\@ocfoot{#2}}
+\def\@ycfoot#1{\gdef\@ecfoot{#1}\gdef\@ocfoot{#1}}
+
+\def\rfoot{\@ifnextchar[{\@xrfoot}{\@yrfoot}}
+\def\@xrfoot[#1]#2{\gdef\@erfoot{#1}\gdef\@orfoot{#2}}
+\def\@yrfoot#1{\gdef\@erfoot{#1}\gdef\@orfoot{#1}}
+
+\newdimen\headrulewidth
+\newdimen\footrulewidth
+\newdimen\plainheadrulewidth
+\newdimen\plainfootrulewidth
+\newdimen\headwidth
+\newif\if@fancyplain \@fancyplainfalse
+\def\fancyplain#1#2{\if@fancyplain#1\else#2\fi}
+
+% Initialization of the head and foot text.
+
+\headrulewidth 0.4pt \footrulewidth\z@ \plainheadrulewidth\z@
+\plainfootrulewidth\z@
+
+% Put together a header or footer given the left, center and
+% right text, fillers at left and right and a rule.
+% The \lap commands put the text into an hbox of zero size,
+% so overlapping text does not generate an errormessage.
+
+\def\@fancyhead#1#2#3#4#5{#1\hbox to\headwidth{\vbox{\hbox
+{\rlap{\parbox[b]{\headwidth}{\raggedright#2\strut}}\hfill
+\parbox[b]{\headwidth}{\centering#3\strut}\hfill
+\llap{\parbox[b]{\headwidth}{\raggedleft#4\strut}}}\headrule}}#5}
+
+
+\def\@fancyfoot#1#2#3#4#5{#1\hbox to\headwidth{\vbox{\footrule
+\hbox{\rlap{\parbox[t]{\headwidth}{\raggedright#2\strut}}\hfill
+\parbox[t]{\headwidth}{\centering#3\strut}\hfill
+\llap{\parbox[t]{\headwidth}{\raggedleft#4\strut}}}}}#5}
+
+\def\headrule{{\if@fancyplain\headrulewidth\plainheadrulewidth\fi
+\hrule\@height\headrulewidth\@width\headwidth
+\vskip-\headrulewidth}}
+
+\def\footrule{{\if@fancyplain\footrulewidth\plainfootrulewidth\fi
+\vskip-0.3\normalbaselineskip\vskip-\footrulewidth
+\hrule\@width\headwidth\@height\footrulewidth\vskip0.3\normalbaselineskip}}
+
+\def\ps@quiz{
+\let\@mkboth\markboth
+\@ifundefined{chapter}{\def\sectionmark##1{\markboth
+{\uppercase{\ifnum \c@secnumdepth>\z@
+ \thesection\hskip 1em\relax \fi ##1}}{}}
+\def\subsectionmark##1{\markright {\ifnum \c@secnumdepth >\@ne
+ \thesubsection\hskip 1em\relax \fi ##1}}}
+{\def\chaptermark##1{\markboth {\uppercase{\ifnum
+\c@secnumdepth>\m@ne
+ \@chapapp\ \thechapter. \ \fi ##1}}{}}
+\def\sectionmark##1{\markright{\uppercase{\ifnum \c@secnumdepth >\z@
+ \thesection. \ \fi ##1}}}}
+\lfoot{} \rfoot{\scriptsize Typeset by \LaTeX} \cfoot{}
+\def\@oddhead{\@fancyhead\relax\@olhead\@ochead\@orhead\hss}
+\def\@oddfoot{\@fancyfoot\relax\@olfoot\@ocfoot\@orfoot\hss}
+\def\@evenhead{\@fancyhead\hss\@elhead\@echead\@erhead\relax}
+\def\@evenfoot{\@fancyfoot\hss\@elfoot\@ecfoot\@erfoot\relax}
+\headwidth\textwidth}
+
+\pagestyle{quiz}
+
+\newcommand{\ta}[5] {\lhead{\textsf{\bfseries #1  }}%
+\rhead{\bfseries\sffamily  } %%%%%%%%%% Type your name, please!!
+\chead{\bfseries\sffamily#2}
+\lfoot{\scriptsize #4} \cfoot{\scriptsize page \thepage~of 6}}
+
+\makeatother
+
+\theoremstyle{remark}
+\newtheorem*{sol}{Solution}
+
+\newcommand{\emptybox}[2][\textwidth]{%
+  \begingroup
+  \setlength{\fboxsep}{-\fboxrule}%
+  \noindent\framebox[#1]{\rule{0pt}{#2}}%
+  \endgroup
+}
+%------------------------------------------------------
+\ta{Spring 2021 MAS109 A-J}{Final Exam}{Final Exam}{}{10}
+%------------------------------------------------------
+
+\begin{document}
+
+%%%You need to input the information of the problem as follows:
+%%%%begin{ProbK}[Total points]{Problem Number}!!!!!!!!!!!!!
+
+
+\begin{center}\textbf{Direction}\end{center}
+
+\begin{enumerate}
+\item The exam is for 65 minutes.
+\item The total score is 90. There are 8 problems.
+\end{enumerate}
+
+\vfill \eject
+
+
+
+
+
+\begin{ProbK}[pt 10]{1}
+Choose all correct statements.
+
+\begin{enumerate}
+    \item[(a)] If $A^TA$ and $AA^T$ are both invertible then $A$ is square.
+    \item[(b)] If $P$ is the standard matrix for the orthogonal projection of $\mathbb{R}^n$ onto a two dimensional subspace $W$, then the rank of $I-P$ is two.
+    \item[(c)] If $A$ is a $3\times 3$ matrix with two pivot positions, then the equation $Ax=0$ has a nontrivial solution.
+    \item[(d)] If $\mathrm{null}(A)=\{0\}$, then $A$ is invertible.
+    \item[(e)] If $A$ is a $3\times 4$ matrix with $\mathrm{nullity}(A)=1$, the equation $Ax= \begin{bmatrix}
+		1 \\
+		2 \\
+		0 \\
+	\end{bmatrix}$ has infinitely many solutions.
+\end{enumerate}
+\end{ProbK}
+
+\vskip 2cm 
+
+\begin{ProbK}[pt 10]{2}
+Choose all correct statements.
+
+\begin{enumerate}
+    \item[(a)] If $A$ is diagonalizable, then the characteristic polynomial of $A$ has $n$ distinct roots.
+    \item[(b)] If $A$ is diagonalizable, then so is $A^k$ for every positive integer $k$.   
+    \item[(c)] If the sum of the algebraic multiplicities of eigenvalues of $A$ is $n$, then $A$ is diagonalizable.
+    \item[(d)] If $A$ is diagonalizable, then $A$ is orthogonally diagonalizable. 
+    \item[(e)] Let $A$ be a symmetric and invertible matrix. If ${\bf x}^TA{\bf x}$ is a negative definite quadratic form, then so is ${\bf x}^TA^{-1}{\bf x}$. 
+\end{enumerate}
+\end{ProbK}
+
+
+\vfill \eject
+
+
+\begin{ProbK}[pt 10]{3}
+Choose all correct statements.
+\begin{enumerate}
+	\item[(a)] If $A$ is diagonalizable, then there is a unique matrix $P$ such that $P^{-1}AP$ is a a diagonal matrix.
+	\item[(b)] If an invertible matrix $A$ is diagonalizable, then $A^{-1}$ is also diagonalizable.
+	\item[(c)] If $A$ is a square matrix, then $AA^T$ is orthogonally diagonalizable.
+	\item[(d)] Let $A$ be a symmetric matrix. If there is a square matrix $C$ such that $A=C^TC$, then $A$ is positive definite.
+	\item[(e)] Let $U\Sigma V^T$ be the singular value decomposition of an $m\times n$ matrix $A$. Then we can find orthonormal bases of the fundamental spaces of $A$. 
+    \end{enumerate}
+
+
+\end{ProbK}
+
+\vskip2cm
+
+\begin{ProbK}[pt 10]{4}
+For positive integers $m,n$, let $M_{m\times n}(\mathbb{R})$ be the set of matrices of size $m\times n$ with entries in $\mathbb{R}$. Choose all correct statements.
+\begin{enumerate}
+	\item[(a)] Given a matrix $A\in M_{m\times n}(\mathbb{R})$. If both $A^TA$ and $AA^T$ are invertible, then $m=n$.
+	\item[(b)] Given a matrix $A\in M_{m\times n}(\mathbb{R})$. If $\mathrm{rank}(A)=\mathrm{rank}(A^T)$, then $m=n$.
+	\item[(c)] Given a matrix $A\in M_{m\times n}(\mathbb{R})$. The matrix $A$ and $AA^T$ have the same column space.
+	\item[(d)] There exists a matrix $A\in M_{5\times 3}(\mathbb{R})$ such that $\mathrm{tr}(A^TA)=-2021$.
+	\item[(e)] Given a matrix $A\in M_{3\times 5}(\mathbb{R})$, the column vectors of $A$ are linearly dependent.
+    \end{enumerate}
+
+
+\end{ProbK}
+
+\vskip2cm
+
+\begin{ProbK}[pt 10]{5}
+Let $A\in M_{8\times 9}(\mathbb{R})$ with $\mathrm{rank}(A)=6.$ Choose all true statements.
+\begin{enumerate}
+	\item[(a)] $\dim(\mathrm{col}(A))=6.$
+	\item[(b)] $\mathrm{nullity}(A)=3$.
+	\item[(c)] $\dim(\mathrm{col}(A)^{\perp})=3$.
+	\item[(d)] $\mathrm{nullity}(A^T)=3$.
+	\item[(e)] $\dim(\mathrm{null}(A^T)^\perp)=6$.
+\end{enumerate}
+
+\end{ProbK}
+
+\vfill \eject
+
+\begin{ProbK}[pt 10]{6}
+Let $\mathcal{B} = \{v_1, v_2, v_3\}$ and $\mathcal{C} = \{w_1, w_2, w_3\}$ be 
+two bases of $\mathbb{R}^3$, where 
+\begin{alignat*}{3}
+	v_1 &= (1, 0, 1),\quad v_2 &&= (0,1,1),\quad v_3 &&=(1,1,0),\\
+	w_1 &= (1,0,0),\quad w_2 &&= (1,1,0),\quad w_3 &&=(1,1,1).
+\end{alignat*}
+Let $\mathbf{x}$ be a vector in $\mathbb{R}^3$ whose coordinate with respect to $\mathcal{B}$ is 
+$[\mathbf{x}]_\mathcal{B} = (1, 2, 3)$. If $[\mathbf{x}]_\mathcal{C} = (a, b, c)$, which of the following is $a+b+c$?
+\begin{enumerate}
+	\item[(a)] 0
+	\item[(b)] 1
+	\item[(c)] 2
+	\item[(d)] 3
+	\item[(e)] 4
+\end{enumerate}
+\end{ProbK}
+
+\vskip2cm
+
+\begin{ProbK}[pt 10]{7}
+Find $a+b$ where $y = ax+b$ is the least square fit line to the following four points: 
+(2, 1), (3, 1), (5, 3), (6, 4).
+    \begin{enumerate}
+    \item[(a)] $\frac{1}{8}$
+    \item[(b)] $\frac{2}{9}$
+    \item[(c)] $\frac{3}{20}$
+    \item[(d)] $\frac{7}{40}$
+    \item[(e)] $\frac{1}{4}$
+    \end{enumerate}
+\end{ProbK}
+
+\vfill \eject
+
+\begin{ProbK}[pt 10]{8}
+\begin{enumerate}
+	\item[(a)] (10 points, 2 points for each)
+	
+	\vspace{1mm}
+	Let $A$ be a $7 \times 8$ matrix given by
+	\begin{align*}
+		A =
+		\begin{bmatrix}
+			1 &  8 & 0 & 0 & 0 & 0 & 0 & 50\\
+			2 &  9 & 0 & 0 & 0 & 0 & 44 & 51\\
+			3 & 10 & 0 & 0 & 0 & 0 & 45 & 52\\
+			4 & 11 & 0 & 0 & 0 & 0 & 46 & 53\\
+			5 & 12 & 0 & 0 & 0 & 0 & 47 & 54\\
+			6 & 13 & 0 & 0 & 0 & 0 & 48 & 55\\
+			7 & 0 & 0 & 0 & 0 & 0 & 49 & 56\\
+		\end{bmatrix}.
+	\end{align*}
+	
+	Write \textbf{True} for codes that generate the same matrix $A$ as above, or \textbf{False} for codes that do not.
+	
+	\vspace{2mm}
+	
+	\begin{itemize}
+		\item[(a)] 
+		\verb"A = reshape(1:56, 7, 8);"\\
+		\verb"A(14 <= A & 43 >= A) = 0;"
+		
+		\item[(b)] 
+		\verb"A = reshape(1:56, 7, 8);"\\
+		\verb"A = A .* ((14 > A) + (43 < A));"
+		
+		\item[(c)]
+		\verb"A(1:13) = 1:13;   A(44:56) = 44:56;"\\
+		\verb"A = reshape(A, 7, 8);"
+		
+		\item[(d)] 
+		\verb"A = reshape(1:56, 7, 8);"\\
+		\verb"A = A(14 <= A) .* A(43 >= A);"
+		
+		\item[(e)] 
+		\verb"A = zeros(7, 8);"\\
+		\verb"A(:) = [1:13, zeros(1, 30), 44:56];"
+	\end{itemize}
+\end{enumerate}
+\end{ProbK}
+
+\vfill \eject
+
+\begin{ProbK}[pt 10]{8}
+	\begin{enumerate}
+	\item[(b)] (10 potins)
+	
+	\vspace{1mm}
+	
+	Let $A$ be an $m \times n$ matrix with full column rank. 
+	The following MATLAB function performs a Gram-Schmidt process and produces 
+	an $m \times n$ orthogonal matrix $Q$ whose columns form an orthonormal basis for col$(A)$. 
+	Fill in the blanks (1) - (5).\\
+	(In this problem, assume that the input $A$ is a matrix 
+	that gives the same result for the both of classical Gram-Schmidt
+	and the modified Gram-Schmidt.)
+	
+	\vspace{2mm}
+	
+	\begin{verbatim}
+		% ------- The following is the script file `GramSchmidt.m'. -------
+		___(1)___ Q = GramSchmidt(A)
+		[m, n] = size(A);
+		
+		% Initialize the matrix Q as an m*n zero matrix.
+		Q = zeros(m, n);
+		for i = 1 : n
+		% v starts with a column of A.
+		v = ___(2)___;
+		for j = 1 : i-1
+		% Subtract orthogonal projections of v onto the subspaces
+		% spanned by the previously generated orthonormal vectors.
+		q = ___(3)___;
+		v = v - ___(4)___;
+		end
+		% Normalize v by its Euclidean norm.
+		Q(:, i) = v / ___(5)___;
+		end
+	\end{verbatim}
+	
+	\begin{itemize}
+		\item[(a)]
+		(1) \verb"def", (2) \verb"A(i, :)", (3) \verb"Q(:, j)", (4) \verb"(q' * A(:, i)) * q", (5) \verb"norm(v)"
+		\item[(b)]
+		(1) \verb"function", (2) \verb"A(:, i)", (3) \verb"Q(:, i)", (4) \verb"(q' * v) * q", (5) \verb"norm(v)"
+		\item[(c)]
+		(1) \verb"def", (2) \verb"A(:, i)", (3) \verb"Q(:, i)", (4) \verb"(q' * v) * q", (5) \verb"sqrt(sum(v^2))"
+		\item[(d)]
+		(1) \verb"function", (2) \verb"A(:, i)", (3) \verb"Q(:, j)", (4) \verb"(q' * A(:, i)) * q", (5) \verb"norm(v)"
+		\item[(e)]
+		(1) \verb"function", (2) \verb"A(:, i)", (3) \verb"Q(:, j)", (4) \verb"(q' * v) * q", (5) \verb"sqrt(sum(v^2))"
+	\end{itemize}
+\end{enumerate}
+\end{ProbK}
+
+\vfill \eject
+\end{document}
